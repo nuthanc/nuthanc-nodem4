@@ -1,0 +1,38 @@
+# The mgmt interface is pinging, but not able to login to it. This is resolved after removing from ip route
+network:
+  version: 2
+  renderer: networkd
+
+  ethernets:
+    eno1:
+      dhcp4: yes
+    eno2:
+      dhcp4: no
+      dhcp6: no
+    enp94s0f1:
+      dhcp4: no
+      dhcp6: no
+
+  bridges:
+    br1:
+      interfaces: [eno2]
+      addresses: [192.168.30.18/24]
+      gateway4: 192.168.30.254
+      nameservers:
+        addresses: [8.8.8.8]
+      parameters:
+        stp: false
+        forward-delay: 0
+      dhcp4: no
+      dhcp6: no
+    br2:
+      interfaces: [enp94s0f1]
+      addresses: [192.168.40.18/24]
+      gateway4: 192.168.40.254
+      nameservers:
+        addresses: [8.8.8.8]
+      parameters:
+        stp: false
+        forward-delay: 0
+      dhcp4: no
+      dhcp6: no

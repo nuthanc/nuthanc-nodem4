@@ -1,0 +1,2000 @@
+scp -rp ubuntu@192.168.30.81:/home/ubuntu/venky/logs .
+ls
+scp -rp ubuntu@192.168.30.81:/home/ubuntu/venky/report .
+ls
+juju status
+ssh 192.168.30.81 -l ubuntu
+ssh 192.168.30.73 -l ubuntu
+scp ubuntu@192.168.30.73:/home/ubuntu/vrouter.ko .
+pwd
+exit
+cd 414_new/
+cat i
+juju add-space new 192.168.30.0/24 192.168.40.0/24
+juju deploy ./bundle.yaml
+cat i
+juju attach contrail-controller contrail-controller=/root/414_new/contrail-controller-ubuntu16.04-4.1.4.0-59.tar.gz
+juju attach contrail-analytics contrail-analytics=/root/414_new/contrail-analytics-ubuntu16.04-4.1.4.0-59.tar.gz
+juju attach contrail-analyticsdb contrail-analyticsdb=/root/414_new/contrail-analyticsdb-ubuntu16.04-4.1.4.0-59.tar.gz
+juju status
+juju debug-log
+juju status
+ssh 192.168.30.35 -l ubuntu
+juju status
+juju debug-log
+ssh 192.168.30.34 -l ubuntu
+juju status
+ssh 192.168.30.32 -l ubuntu
+juju debug-log
+juju status
+cat i
+juju add-space new 192.168.30.0/24 192.168.40.0/24
+juju deploy ./bundle.yaml
+cat i
+juju attach contrail-controller contrail-controller=/root/414_new/contrail-controller-ubuntu16.04-4.1.4.0-59.tar.gz
+juju attach contrail-analytics contrail-analytics=/root/414_new/contrail-analytics-ubuntu16.04-4.1.4.0-59.tar.gz
+juju attach contrail-analyticsdb contrail-analyticsdb=/root/414_new/contrail-analyticsdb-ubuntu16.04-4.1.4.0-59.tar.gz
+juju status
+ssh 192.168.30.60 -l ubuntu
+juju status
+ssh -l ubuntu 192.168.30.37 -L 7279:192.168.30.37:80 -fN
+ssh -l ubuntu 192.168.30.45 -L 7189:192.168.30.45:8143 -fN
+ls
+cd
+cd test
+ls
+scp * ubuntu@192.168.30.45:
+ssh ubuntu@192.168.30.45
+ped
+cd
+cd 414_new/
+ls
+cat i
+ls contrail-*
+vi i
+cat i
+juju attach contrail-controller contrail-controller=/root/414_new/contrail-controller-ubuntu16.04-4.1.4.0-60.tar.gz
+juju add-space new 192.168.30.0/24 192.168.40.0/24
+juju deploy ./bundle.yaml
+cat i
+juju attach contrail-controller contrail-controller=/root/414_new/contrail-controller-ubuntu16.04-4.1.4.0-60.tar.gz
+juju attach contrail-analytics contrail-analytics=/root/414_new/contrail-analytics-ubuntu16.04-4.1.4.0-60.tar.gz
+juju attach contrail-analyticsdb contrail-analyticsdb=/root/414_new/contrail-analyticsdb-ubuntu16.04-4.1.4.0-60.tar.gz
+juju status
+juju debug-log
+juju status
+juju debug-log
+juju status
+juju debug-log
+juju status
+juju debug-log
+juju status
+cat i
+juju bootstrap --debug --no-gui --bootstrap-constraints tags=juju mymaas myjujucontroller
+cat i
+juju add-space new 192.168.30.0/24 192.168.40.0/24
+vi bundle.yaml 
+cat i
+juju deploy ./bundle.yaml
+cat i
+juju attach contrail-controller contrail-controller=/root/414_new/contrail-controller-ubuntu16.04-4.1.4.0-60.tar.gz
+juju attach contrail-analytics contrail-analytics=/root/414_new/contrail-analytics-ubuntu16.04-4.1.4.0-60.tar.gz
+juju attach contrail-analyticsdb contrail-analyticsdb=/root/414_new/contrail-analyticsdb-ubuntu16.04-4.1.4.0-60.tar.gz
+juju status
+ssh 192.168.30.73 -l ubuntu
+juju status
+ssh -l ubuntu 192.168.30.89 -L 7279:192.168.30.89:80 -fN
+ssh -l ubuntu 192.168.30.81 -L 7189:192.168.30.81:8143 -fN
+ssh 192.168.30.81 -l ubuntu
+ssh 192.168.30.85  -l ubuntu
+ssh 192.168.30.73 -l ubuntu
+juju status
+ssh 192.168.30.81 -l ubuntu
+ls
+cd 414-60/
+ls
+history
+ls
+chmod 777 /root/Netronome_R4.1.2_build_135_Juju/openstack-charm-patches/0001-Multi-repo-nova_cc.patch 
+chmod 777 /root/Netronome_R4.1.2_build_135_Juju/openstack-charm-patches/0001-Multi-repos-neutron-api.patch 
+chmod 777 charm-nova-cloud-controller
+sudo patch -p1 -d charm-nova-cloud-controller /root/Netronome_R4.1.2_build_135_Juju/openstack-charm-patches/0001-Multi-repo-nova_cc.patch 
+rm -rf charm-nova-cloud-controller/
+git clone https://github.com/openstack/charm-nova-cloud-controller
+chmod 777 charm-nova-cloud-controller
+sudo patch -p1 -d charm-nova-cloud-controller /root/Netronome_R4.1.2_build_135_Juju/openstack-charm-patches/0001-Multi-repo-nova_cc.patch -v
+sudo patch -p1 -d charm-nova-cloud-controller /root/Netronome_R4.1.2_build_135_Juju/openstack-charm-patches/0001-Multi-repo-nova_cc.patch 
+rm -rf charm-nova-cloud-controller/
+git clone https://github.com/openstack/charm-nova-cloud-controller
+chmod 777 charm-nova-cloud-controller
+sudo patch -p1 -d charm-nova-cloud-controller /root/Netronome_R4.1.2_build_135_Juju/openstack-charm-patches/0001-Multi-repo-nova_cc.patch 
+sudo patch -p1 -d charm-nova-cloud-controller /root/Netronome_R4.1.2_build_135_Juju/openstack-charm-patches/0001-Multi-repo-nova_cc.patch --verbose -f
+chmod 777 /root/Netronome_R4.1.2_build_135_Juju/openstack-charm-patches
+sudo patch -p1 -d charm-nova-cloud-controller /root/Netronome_R4.1.2_build_135_Juju/openstack-charm-patches/0001-Multi-repo-nova_cc.patch --verbose -f
+rm -rf charm-nova-cloud-controller/
+git clone https://github.com/openstack/charm-nova-cloud-controller
+chmod 777 charm-nova-cloud-controller
+sudo patch -p1 -d charm-nova-cloud-controller /root/Netronome_R4.1.2_build_135_Juju/openstack-charm-patches/0001-Multi-repo-nova_cc.patch --verbose -f
+ls
+vi testbed41.py 
+ls
+./testrunner.sh list
+sudo docker ps
+sudo docker exec -it 3cf02e8b3a58 bash
+sudo docker start 3cf02e8b3a58
+sudo docker exec -it 3cf02e8b3a58 bash
+ssh 192.168.30.81 -l ubuntu
+ssh 192.168.30.73 -l ubuntu
+scp ubuntu@192.168.30.73:/home/ubuntu/vrouter.ko .
+history | grep scp
+scp vrouter.ko root@10.204.216.136:/root/vrouter
+exit
+sudo find / -name model.py
+ssh 192.168.30.73 -l ubuntu
+exit
+ls
+exit
+ssh -l ubuntu 192.168.30.89 -L 8279:192.168.30.89:80 -fN 
+pwd
+ls
+ls
+exit
+docke rp[s
+docker ps
+sudo contrail-version
+docker ps 
+sudo contrail-status
+ssh 192.168.30.81 -l ubuntu
+sudo juju status
+ssh 192.168.30.81 -l ubuntu
+ssh 192.168.30.73 -l ubuntu
+pwd
+ls
+ssh 192.168.30.81 -l ubuntu
+scp ./contrail-networking-docker_4.1.3.0-29_xenial.tgz ubuntu@10.204.216.136:
+scp ./contrail-networking-docker_4.1.3.0-29_xenial.tgz root@10.204.216.136:
+ssh 192.168.30.81 -l ubuntu
+ssh 192.168.30.73 -l ubuntu
+exit
+ssh 192.168.30.73 -l ubuntu
+ls
+ssh 192.168.30.73 -l ubuntu
+mkdir vrouter
+cd vrouter/
+scp ubuntu@192.168.30.73:/home/ubuntu/*.ko .
+ls
+scp * root@10.204.216.136:/root/vrouter
+cd
+ssh 192.168.30.73 -l ubuntu
+ls
+cd UBUNTU/
+ls
+ssh 192.168.30.73 -l ubuntu
+exit
+wget junos-vsrx-12.1-in-network.vmdk.gz
+wget http://10.84.5.120/images/converts/junos-vsrx-12.1-in-network.vmdk.gz
+scp junos-vsrx-12.1-in-network.vmdk.gz ubuntu@192.168.30.81:~/
+ls gunzip -f /contrail-test/images/junos-vsrx-12.1-in-network.img.gz
+ssh 192.168.30.81 -l ubuntu
+ssh 192.168.30.73 -l ubuntu
+ssh 192.168.30.81 -l ubuntu
+ssh 192.168.30.73 -l ubuntu
+ssh -l ubuntu 192.168.30.81 -L 727:192.168.30.81:80 -fN 
+exit
+ssh -l ubuntu 192.168.30.81 -L 7289:192.168.30.81:80 -fN
+exit
+ssh 192.168.30.73 -l ubuntu
+ssh -l ubuntu 192.168.30.89 -L 7279:192.168.30.89:80 -fN
+exit
+ssh -l ubuntu 192.168.30.89 -L 6279:192.168.30.89:80 -fN
+exit
+ssh 192.168.30.73 -l ubuntu
+exit
+ssh -l ubuntu 192.168.30.81 -L 7189:192.168.30.81:8143 -fN
+exit
+ssh 192.168.30.81 -l ubuntu
+ifcofig
+ip addr
+ssh 192.168.30.73 -l ubuntu
+;s
+ls
+cd TEST
+ls
+cd contrail-test/
+ls
+cd images/
+ls
+cd ..
+ls
+cd ..
+ls
+cd 414-60/
+;s
+kls
+ls
+cd ..
+ls
+cd venky/
+ls
+cd ..
+ls
+cd tst
+lcd test
+cd test/
+ls
+docker ps 
+cd 
+ssh 192.168.30.81 -l ubuntu
+cd ..
+exigt
+exit
+ssh -l ubuntu 192.168.30.81 -L 7190:192.168.30.81:8143 -fN
+exit
+ssh 192.168.30.81 -l ubuntu
+ssh 192.168.30.73 -l ubuntu
+ssh 192.168.30.81 -l ubuntu
+ssh 192.168.30.73 -l ubuntu
+ssh 192.168.30.81 -l ubuntu
+ssh 192.168.30.73 -l ubuntu
+ssh 192.168.30.81 -l ubuntu
+juju status
+netstat -nap | grep 192.168.30.83
+ssh 192.168.30.81 -l ubuntu
+exit
+ssh -l ubuntu 192.168.30.89 -L 7277:192.168.30.89:80 -fN
+juju status openstack-dashboard
+ssh -l root 10.204.216.171 -L 7243:127.0.0.1:7267
+ssh -l ubuntu 192.168.30.89 -L 7267:192.168.30.89:80 -fN 
+ssh -l ubuntu 192.168.30.81 -L 7288:192.168.30.81:80 -fN 
+ssh 192.168.30.73 -l ubuntu
+ssh 192.168.30.81 -l ubuntu
+sudo jujus status
+sudo juju status
+ls
+cd venky/
+cd ..
+ls
+cd 414_new  
+ls
+sudo juju deploy  bundle.yaml 
+sudo juju --help
+sudo juju status
+sudo juju logs
+sudo juju show logs
+sudo juju logs show 
+sudo juju status
+ssh 192.168.30.73 -l ubuntu
+sudo juju status
+watch juju status
+ssh -l ubuntu 192.168.30.81 -L 7278:192.168.30.81:80 -fN
+ls
+ls -ltrh
+sudo juju status
+ssh -l ubuntu 192.168.30.89
+sudo snap install openstackclients --classic
+ssh -l ubuntu 192.168.30.81
+ssh -l ubuntu 192.168.30.89 -L 7078:192.168.30.89:80 -fN
+wget http://10.84.5.120/images/converts/ubuntu-dhcp-server.vmdk.gz
+ls
+scp  ubuntu-dhcp-server.vmdk.gz ubuntu@192.168.30.81:~/
+ssh 192.168.30.81 -l ubuntu
+ssh 192.168.30.73 -l ubuntu
+ssh 192.168.30.81 -l ubuntu
+ssh -l ubuntu 192.168.30.81 -L 7289:192.168.30.81:8143
+ls
+cd Netronome_R4.1.2_build_135_Juju
+ls
+cd agilio-vrouter/;s
+ls
+cd ..
+ls
+cd openstack-charm-patches/
+ls
+cd ..
+ls
+cat README.md 
+ls
+cd debs/
+ls
+cd ..
+sl
+ls
+cd ..
+ls
+cd sanity/
+ls
+cd ..
+ls
+cd s1
+ls
+cd s1
+ls
+cd 414
+;s
+ls
+vim bundle
+vim bundle.yaml 
+apt-get install vim 
+ls
+vim bundle17.yaml 
+grep -r "192.168.30."
+ls
+cd ..
+ls
+cd 414_new/
+ls
+ls -ltrh
+date
+cd old/
+ls
+cd ..
+ls
+ls -ltrh
+vim bundle.yaml
+ls
+vimdiff  bundle.1123 bundle.yaml
+sudo juju status
+cd ..
+ls
+vim  414-60
+cd 414-60
+ls
+ls -ltrh
+vim bundle.yaml 
+cd ..
+ls
+pwd
+ls
+cd ..
+ls
+cd ve
+cd 
+ls
+cd venky/
+ls
+sssh 192.168.30.81 -l ubuntu
+ssh 192.168.30.81 -l ubuntu
+scp -r ubuntu@192.168.30.81:/home/ubuntu/venky/new .
+ls
+cd new/
+cd contrail-test/
+sl
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd  414_new/
+ls
+vim bundle.yaml 
+vim diff bundle.yaml bundle.1123     
+vimdiff bundle.yaml bundle.1123     
+sudo juju  deploy budle.yaml
+sudo juju  deploy bundle.yaml
+sudo juju status
+ssh 192.168.30.81 -l ubuntu
+ls
+ssh 192.168.30.81 -l ubuntu
+ssh 192.168.30.73 -l ubuntu
+ssh 192.168.30.81 -l ubuntu
+sudo juju status
+sudo less +F /var/log/juju/unit-rabbitmq-server-0.log
+sudo tail -f /var/log/syslog
+vi /etc/rabbitmq/rabbitmq-env.conf
+sudo vi /etc/rabbitmq/rabbitmq-env.conf
+ssh 192.168.30.81 -l ubuntu
+sudo juju status
+sudo juju status --help
+sudo juju status-log
+sudo juju show-status-log
+sudo juju status show-status-log
+sudo juju status show-status-log --help
+juju show-status rabbitmq-server
+sudo juju status show-status-log --help
+juju show-status rabbitmq-server/0*
+sudo juju --help
+sudo juju remove-unit --help
+juju remove-unit rabbitmq-server/0*
+sudo juju remove-unit rabbitmq-server/0*
+sudo juju remove-unit rabbitmq-server
+sudo juju remove-unit rabbitmq-server/0
+sudo juju deploy   bundle.yaml
+sudo juju status show-status-log
+sudo juju status
+sudo juju status show-status-log
+ls
+juju status
+exit
+ssh 192.168.30.73 -l ubuntu
+juju status
+sudo juju remove-unit --help
+sudo juju remove-application --help
+sudo juju remove-application rabbitmq-server/0
+sudo juju remove-application rabbitmq-server
+juju status
+sudo juju add-application rabbitmq-server
+juju status
+sudo juju add-application rabbitmq-server
+juju add-unit rabbitmq-server --to noden20.maas
+juju status
+sudo juju add-application
+juju add-unit rabbitmq-server 
+sudo juju add-application
+juju status
+juju add-unit rabbitmq-server/0
+juju add-unit rabbitmq-server --to noden20.maas
+juju add-unit rabbitmq-server
+juju add-unit rabbitmq-server 
+sudo juju remove-application rabbitmq-server
+sudo juju remove-application rabbitmq-server/0
+sudo juju remove-application rabbitmq-server
+juju status
+juju debug-log
+ls
+cat 414_new/
+ls
+cd 414-60/
+ls
+cd
+cd 414_new/
+ls
+cat i
+exit
+juju status
+ssh 192.168.30.81 -l ubuntu
+mkdir LOG
+cd LOG
+scp -rp  ubuntu@192.168.30.81:/homes/ubuntu/logs .
+scp -rp  ubuntu@192.168.30.81:/home/ubuntu/logs .
+ls
+cd
+ls LOG/
+ssh 192.168.30.81 -l ubuntu
+cd vrouter/
+ls
+cd
+cd 414
+cd
+cd 414_new/
+ls
+vi bundle.yaml 
+owd
+pwd
+juju status
+exit
+cd venky/
+ls
+grep -r PASSED logs/
+cd
+ls
+cd
+cd UBUNTU/
+ls
+cd 
+cd venky/
+ls
+cd new/
+ls
+cd contrail-test/images/
+ls
+cd
+cd 413
+cd
+cd 414_new/
+ls
+cat i
+juju kill-controller myjujucontroller
+pwd
+exit
+ls
+ssh 192.168.30.73 -l ubuntu
+exit
+ls
+cd venky/
+ls
+cd  new/
+ls
+cd contrail-test/
+ls
+cd ..
+ls
+cd om
+cd images/
+ls
+cd ..
+cd contrail-test/
+ls
+cd images/
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd UBUNTU/
+ls
+../ junos-vsrx-12.1-in-network.vmdk.gz  .
+cd ..
+la
+ls
+cp junos-vsrx-12.1-in-network.vmdk.gz UBUNTU/
+cp ubuntu-dhcp-server.vmdk.gz UBUNTU/
+uptime
+ls
+python /usr/lib/virtioforwarder_core_pinner.py --virtio-cpu=0:10.11
+sudo python /usr/lib/virtioforwarder_core_pinner.py --virtio-cpu=0:10.11
+juju status
+ssh 192.168.30.88 -l root
+ssh 192.168.30.88 -l ubuntu
+ls
+cd 414_new/
+ls
+juju bootstrap --debug --no-gui --bootstrap-constraints tags=juju mymaas myjujucontroller
+juju add-space new 192.168.30.0/24 192.168.40.0/24
+juju deploy ./bundle.yaml
+juju attach contrail-controller contrail-controller=/root/414_new/contrail-controller-ubuntu16.04-4.1.4.0-60.tar.gz
+juju attach contrail-analytics contrail-analytics=/root/414_new/contrail-analytics-ubuntu16.04-4.1.4.0-60.tar.gz
+juju attach contrail-analyticsdb contrail-analyticsdb=/root/414_new/contrail-analyticsdb-ubuntu16.04-4.1.4.0-60.tar.gz
+sudo juju status
+sudo juju ssh 1
+sudo juju status
+sudo juju ssh 192.168.30.98
+sudo ssh -l ubuntu 192.168.30.98
+sudo juju ssh 1
+ls
+vim bundle.yaml
+sudo juju ssh 1
+ls
+sudo juju ssh 0
+ls
+cd ..
+ls
+cd TEST
+ls
+cd
+cd test/
+ls
+sudo juju status
+sudo juju ssh 0
+ls
+scp docker-image-contrail-test-ocata-4.1.4.0-59.tar.gz  ubuntu@192.168.30.98:~/
+scp test  ubuntu@192.168.30.98:~/
+scp test*  ubuntu@192.168.30.98:~/
+sudo juju ssh 0
+ls
+cd ..
+ls
+cd venky/
+ls
+docker cp contrail-test/ bcd4aefbc433:/
+scp -r  contrail-test ubuntu@192.168.30.98:~/
+sudo juju ssh 0
+ip route
+ping 192.168.30.254
+exit
+ls
+sudo juju ssh 1
+sudo juju status
+juju status
+juju status | more
+juju status | grep neutron
+clear
+juju ssh 0
+juju ssh neutron-api/0
+clear
+ls 
+j
+clear
+juju ssh 1
+juju ssh 0
+juju status | more
+juju status | grep nova
+juju ssh nova-cloud-controller/0
+sudo juju status
+sudo juju status | keystone 
+sudo juju status | grep keystone 
+docker ps 
+docker ps | grep controller
+docker ps | grep controlle
+docker ps | grep control
+sudo juju status | grep control
+sudo juju ssh 192.168.30.98 
+sudo ssh ubuntu@192.168.30.98 
+ssh -l ubuntu 192.168.30.86 -L 7289:192.168.30.86:8143 -fN
+ssh -l ubuntu 192.168.30.86 -L 7071:192.168.30.86:80 -fN
+sudo juju ssh 1
+ssh -l ubuntu 192.168.30.86 -L 7277:192.168.30.86:8143 -fN 
+exit
+sudo ssh ubuntu@192.168.30.98 
+sudo vif --list
+juju status
+shs 192.168.30.88  -l ubuntu
+ssh 192.168.30.88  -l ubuntu
+exit
+history
+juju status
+ssh 192.168.30.88 -l ubuntu
+sudo docker ps
+sudo docker exec -it 3cf02e8b3a58 bash
+juju status
+ssh 192.168.30.88 -l ubuntu
+history
+juju status
+history
+juju status
+history
+juju status
+ssh -l ubuntu 192.168.30.86 -L 7279:192.168.30.86:80 
+ssh -l ubuntu 192.168.30.86 -L 7279:192.168.30.86:80 -fN
+ssh -l ubuntu 192.168.30.98 -L 7189:192.168.30.98:8143 -fN
+sudo vif --list
+ssh 192.168.30.88 -l ubuntu
+u
+juju status
+ssh 192.168.30.88  -l ubuntu
+juju status
+ssh 192.168.30.98  -l ubuntu
+clear
+juju status
+juju status | more
+ls
+ls 
+claer
+clear
+exit
+juju status
+juju status | more
+juju ssh 0
+juju ssh 1
+juju ssh 0
+juju ssh 1
+ls
+ls -ltrh
+juju status
+juju status | more
+docker ps -a
+ls 
+ls -ltrh
+clear
+ls 
+histor
+history
+docker ps -a
+history
+exit
+ls
+docker p s-a
+docker ps -a
+docker exec -it 3cf02e8b3a58 bash
+ls 
+exit
+ls 
+docker ps -a
+juju ssh 1
+ls 
+juju ssh 0
+juju status
+ssh 192.168.30.88  -l ubuntu
+ls 
+juju ssh -
+juju ssh 0
+ls
+ls -ltrh
+juju ssh 0
+juju status | more
+juju ssh 0
+juju status | more
+ip route
+juju ssh 0
+ip route
+juju status | more
+juju ssh 0
+exit
+juju sttaus
+juju status
+ssh 192.168.30.98  -l ubuntu
+ls
+cd lgos
+cd logs
+cd log
+ls
+cd LOG/
+ls
+cd logs/
+ls
+vi testbasicpolicy.log  
+grep -r nfp_v0
+ls 
+ping noden17
+ls
+cd contrail-test
+ls 
+cd 
+cd contrail-test
+ls
+vim sanity_params.ini
+ls
+ls 
+sl -ltrh
+ls 
+ls -ltrh
+git status
+git history
+ls
+history
+ls 
+cd 
+history
+ls
+cd contrail-test
+ls -ltrh
+lscpu
+systemctl status virtio-forwarder
+las 
+cd 
+ls
+juju ssh 0
+juju ssh 1
+ls 
+juju status | more
+exit
+juju status | more
+exit
+juju status
+ssh 192.168.30.88 -l ubuntu
+juju status
+vi 414/bundle.yaml 
+ls
+ssh 192.168.30.10 -l root
+ssh 192.168.30.10 -l ubuntu
+ls
+virsh
+ls /mnt/disk1/images/vm1.img
+ls -l /mnt/disk1/images/vm1.img
+cd /mnt/disk1/images/
+scp vm1.img root@10.204.217.158:/root
+ls 
+juju ssh 0
+ls 
+ls -ltrh
+date
+juju ssh 0
+ls 
+ls -ltrh
+juju ssh 0
+juju ssh 1
+juju ssh 0
+ls 
+ls
+juju status
+juju status | more
+ssh ubuntu@192.168.30.98
+ls 
+clear
+ls 
+ls -ltrh
+clear
+ls 
+clear
+s
+ls
+juju status
+ls
+c
+claer
+clear
+ls 
+clear
+juju ssh 0
+juju ssh 0
+juju status | more
+juju ssh accel-nova-compute/0
+cd TEST
+ls
+cd
+ls
+cd UBUNTU/
+ls
+ls ubuntu-dhcp-server.vmdk.gz 
+scp ./ubuntu-dhcp-server.vmdk.gz root@10.204.216.136:/root
+ls
+exit
+zgrep -r "
+
+
+
+exit
+juju ssh 1
+juju status
+juju status | More
+juju ssh 0
+juju status | more
+juju ssh openstack-dashboard/0
+juju status | more
+juju ssh openstack-dashboard/0
+juju ssh 0
+juju status | more
+juju ssh 0
+juju status | more
+ls
+ip route
+juju ssh 0
+ifconfig | more
+juju ssh 1
+juju ssh 0
+juju ssh 1
+juju ssh 0
+docker ps -a
+juju ssh 0
+juju status | grep keystone
+ls
+juju status | more
+juju ssh 1
+juju ssh 0
+clear
+ls 
+juju status
+ls
+cd 1414
+ls 
+cd 414
+ls 
+vi bundle.yaml 
+ls 
+cd 
+ls 
+cd 414-60/
+ls 
+vi bundle.yaml 
+ls 
+cd 
+ls 
+cd 414_new/
+ls 
+vi bundle.yaml 
+ls 
+cd 
+ls 
+ls -ltrh
+cd venky/
+ls 
+cd ..
+ls 
+ls -ltrh
+cd 414
+ls 
+vi bundle17.yaml 
+ls
+ls 
+exit
+ls 
+mkdir ankit
+cd ankit/
+ls 
+pwd
+ping noden17
+cd 
+ls 
+ls -ltrh
+mv contrail-cloud-docker_4.1.4.0-62-ocata_xenial.tgz contrail-networking-docker_4.1.4.0-62_xenial.tgz 414_62/
+ls 
+cd 414_62/
+ls 
+tar -xzvf contrail-cloud-docker_4.1.4.0-62-ocata_xenial.tgz 
+ls
+ls -ltrh
+tar -xzvf contrail-cloud-docker-images_4.1.4.0-62.tgz
+ls
+tar -xzvf contrail-networking-docker_4.1.4.0-62_xenial.tgz
+tar -xzvf contrail-cloud-docker-images_4.1.4.0-62.tgz
+ls
+tar -xzvf contrail-networking-docker_4.1.4.0-62_xenial.tgz
+tar -xzvf contrail-docker-images_4.1.4.0-62.tgz
+ls
+ls 
+ls -ltrh
+scp -r contrail-analytics-ubuntu16.04-4.1.4.0-62.tar.gz contrail-controller-ubuntu16.04-4.1.4.0-62.tar.gz contrail-analyticsdb-ubuntu16.04-4.1.4.0-62.tar.gz ../414_new/
+cd ..
+cd 414_new/
+ls 
+juju controllers
+juju kill-controller myjujucontroller
+ls
+clear
+vim test.sh
+chmod +x test.sh
+vim bundle.sh
+ls 
+
+vim bundle.yaml 
+ls
+vim bundle.yaml 
+ls 
+screen
+exit
+juju status
+ssh 192.168.30.98 -l ubuntu
+ls
+cd 414
+ls
+vi bundle.yaml 
+cd
+cd 414-60/
+ls
+cd
+cd 414_62
+ls
+cd
+cd 414
+ls
+pwd
+vi /root/414/bundle.yaml 
+pw
+pwd
+ls
+cat k
+ls
+cd
+ls
+cd 414
+ls
+vi bundle.yaml 
+cd
+ls
+cd 414
+;s
+ls
+cd 414
+cat 414 
+ls
+cd
+cd 414-60/
+ls
+vi bundle.yaml 
+pwd
+cd 
+cd 414_new/
+l
+vi bundle.yaml 
+vi bundle.1123 
+vi bundle.yaml 
+pwd
+vi bundle.yaml 
+exit
+juju status
+ssh 192.168.30.101 -l ubuntu
+juju status
+ls 
+juju status | more
+ls
+cd 414
+ls 
+cd 
+cd venky/
+ls 
+cd 
+sl 
+ls -ltrh
+cd venky/
+ls 
+cd 
+ls
+ls -ltrh
+cd venky/
+ls 
+cd 
+juju status
+juju status | more
+ls 
+cd 414
+ls 
+ls -ltrh
+vi bundle17.yaml 
+ls 
+vi bundle.yaml 
+vi 414 
+ls -ltrh
+cd 
+ls 
+cd 414
+ls 
+cd 
+ls 
+cd 414
+ls 
+cd 
+ls 
+cd 414_60
+ls 
+cd 414_60
+ls 
+cd 
+ls -ltrh
+history
+ls
+cd 414_new 
+ls
+vi bundle.yaml 
+ls 
+cd 
+ls 
+cd 1414
+cd 414
+ls 
+vi bundle.yaml 
+cd charm-n
+cd 
+cd 414_new/
+ls 
+vi bundle.yaml 
+juju ssh 0
+d 
+cd 
+ssh -l ubuntu 192.168.30.100
+juju status
+juju status | more
+juju status
+juju status | more
+ls 
+ls -ltrh
+ssh -l ubuntu 192.168.30.10
+juju status
+juju status | more
+juju ssh contrail-analytics/0
+juju status | More
+juju status | more
+juju ssh contrail-controller/0
+juju status | more
+docker ps -a
+docker ps -a | more
+docker ps -a
+docker ps -a | more
+docker ps -a
+contrail-status
+juju status | more
+juju ssh  b
+juju ssh ontrail-controller/0
+juju ssh vontrail-controller/0
+juju ssh contrail-controller/0
+juju status | more
+juju status
+juju status | more
+juju ssh contrail-controller/0
+ls 
+clear
+ls 
+cd /home/ubuntu/NETRONOMEALL
+ls 
+exit
+ssh 192.168.30.10 -l ubuntu
+juju status
+juju status | more
+juju status
+juju status | more
+ls 
+ssh -l ubuntu 192.168.30.14
+exit
+ls 
+juju status
+juju status | more
+ls 
+cd 414_new/
+ls 
+vi test.sh 
+ls 
+ls /root/414_new/contrail-analyticsdb-ubuntu16.04-4.1.4.0-62.tar.gz
+ls
+juju status
+vim test.sh 
+clear
+cd 
+clear
+ls 
+ssh -l ubuntu 192.168.30.10
+ls 
+ls
+cd 62
+ls 
+cd 62
+ls 
+ls -ltrh
+cd 414_62/
+ls 
+ls -ltrh
+scp -r contrail-networking-docker_4.1.4.0-62_xenial.tgz ubuntu@192.168.30.10:/home/ubuntu
+ls
+ls 
+ls -ltrh
+ls
+for i in $(ls *.tgz); do tar -xzf $i; rm $i; done
+cd 
+ls 
+claer
+clear
+juju status | more
+juju status
+juju status | more
+juju status
+juju status | more
+juju ssh contrail-controller/0
+juju status
+juju status | more
+juju status
+juju status | more
+juju ssh  contrail-openstack/2
+juju status | more
+juju ssh contrail-controller/0
+juju status
+juju status | more
+juju ssh contrail-controller/0
+juju status
+juju status | more
+juju ssh contrail-analytics/0
+juju status
+juju status | more
+juju ssh contrail-controller/0
+juju status
+juju status | more
+juju ssh contrail-controller/0
+juju status
+juju status | More
+juju status | more
+ls 
+cd 414_new/
+ls 
+ls -ltrh 
+ls bundle.yaml 
+cd 
+docker ps a-
+juju status
+juju status | more
+juju status
+juju status | more
+clear
+jls 
+ls 
+ls -ltrh
+cd 414_new/
+ls 
+cd ..
+ls
+cd 414_62
+ls 
+scp -r contrail-vrouter-packages_4.1.4.0-62.tgz ubuntu@192.168.30.100:/ubuntu
+scp -r contrail-vrouter-packages_4.1.4.0-62.tgz ubuntu@192.168.30.100:/ubuntu/home
+scp -r contrail-vrouter-packages_4.1.4.0-62.tgz ubuntu@192.168.30.10:/ubuntu/home
+ls
+scp -r contrail-vrouter-packages_4.1.4.0-62.tgz ubuntu@192.168.30.10:/home/ubuntu
+ssh ubuntu@192.168.30.10
+ls 
+clear
+cd ..
+ls 
+ls -ltrh
+clear
+ls 
+clear
+cd 414
+ls 
+cd 
+ls 
+ls -ltrh
+cd 414_new
+ls 
+./test.sh 
+ls 
+vi test.sh 
+jujiu statu
+ls 
+ls -ltrh
+cd 414
+ls 
+cd 
+ls 
+cd 
+ls 
+ls -ltrh
+cd venky/
+ls 
+juju status | more
+ls 
+cd 
+ls 
+cd 414
+ls 
+cd 
+cd 414_new
+ls
+vim bundle.yaml 
+clear
+cd 
+mkdir 414_62
+ls 
+cd 414
+ls 
+cd 
+cd 414_62/
+ls 
+pwd
+ping noden17
+cd 
+ls 
+juju ssh 1
+juju status
+juju status | more
+juju ssh 0
+ls 
+juju status
+juju status | more
+clear
+ls 
+ls
+ls -ltrh
+414_62
+ls 
+cd 414_62
+ls 
+cd 
+ls 
+ls -ltrh
+ls 
+ls -ltrh
+cd 414_
+ls 
+cd 414_62/
+ls 
+ls -ltrh
+cd 
+ls 
+ls -ltrh
+cd 414_new/
+ls
+ls -ltrh
+vi test.sh 
+ls 
+ls
+vi test.sh 
+ls 
+juju status | more
+ls 
+ls
+cd 414_62/
+clear
+juju status | more
+ssh -l ubuntu 192.168.30.14
+juju status
+ssh 192.168.30.117 -l ubuntu
+juju status
+ssh 192.168.30.119 -l ubuntu
+juju status
+ssh 192.168.30.119 -l ubuntu
+exit
+juju status
+juju debug log
+juju debug-log
+juju debug log
+juju status
+juju debug-log
+exit
+ls
+cd 414_new/
+ls
+vi bundle.yaml 
+ssh 192.168.30.10 -l root
+ssh 192.168.30.10 -l ubuntu
+juju status
+ssh 192.168.30.115 -l ubuntu
+juju status
+juju status | grep rror
+ssh 192.168.30.115 -l ubuntu
+juju status | grep rror
+juju status 
+exit
+contrail-status
+docker ps -a
+ls 
+clear
+juju status
+juju status | more
+juju ssh 192.168.30.115
+clear
+ls 
+192.168.30.115
+clear
+juju status
+q
+juju ssh accel-contrail-agent/0
+ip route
+juju status
+juju status | more
+ls 
+cd 414_60
+ssh 192.168.30.119 -l ubuntu
+juju status
+ssh 192.168.30.119 -l ubuntu
+juju status
+ip address | grep 192
+ssh 192.168.30.119 -l ubuntu
+juju status
+juju tatus
+juju status
+juju status | more
+juju ssh accel-contrail-agent/
+juju ssh 0
+ls 
+juju status
+juju status | more
+juju ssh 0
+ls 
+ssh -l ubuntu 192.168.30.10
+ls 
+ls -ltrh
+cd 414_63/
+ls 
+cd 
+ls 
+cd 414_63
+ls 
+cd 
+ls 
+cd 414_63
+ls 
+ls *vrouter*
+exit
+ls 
+ls -ltrh
+mkdir 63
+mv contrail-cloud-docker_4.1.4.0-63-ocata_xenial.tgz 63/
+ls 
+cd 63/
+ls 
+tar -xzvf contrail-cloud-docker_4.1.4.0-63-ocata_xenial.tgz
+ls
+tar -xzvf contrail-networking-docker_4.1.4.0-63_xenial.tgz
+tar -xzvf contrail-cloud-docker-images_4.1.4.0-63.tgz
+tar -xzvf openstack-docker-images_4.1.4.0-63_ubuntu.tgz
+ls 
+ls -ltrh
+tar -xzvf contrail-docker-images_4.1.4.0-63.tgz
+ls
+ls -ltrh
+mdkir pkgs
+mkdir pkgs
+ls
+cp contrail-analyticsdb-ubuntu16.04-4.1.4.0-63.tar.gz pkgs/
+cp contrail-analytics-ubuntu16.04-4.1.4.0-63.tar.gz pkgs/
+cp contrail-controller-ubuntu16.04-4.1.4.0-63.tar.gz pkgs/
+ls
+ls 
+cd ..
+ls 
+cd 414_new/
+ls 
+cd 
+ls 
+cd 63/
+ls 
+cd pkgs/
+ls 
+cp * /root/414_new/
+cd 
+cd 414_new/
+ls 
+vi test.sh 
+exit
+ls 
+cd 414_62
+ls 
+clear
+cd ..
+cd 414_new/
+ls 
+juju bootstrap --debug --no-gui --bootstrap-constraints tags=juju mymaas myjujucontroller
+ls 
+./test.sh 
+juju controllers
+juju kill-controller myjujucontroller
+juju controllers
+./test.sh 
+juju status
+juju status | more
+ls 
+cd agilio-vrouter/
+ls 
+juju status
+juju status | more
+ls
+ls 
+ls
+cd ..
+ls 
+vi bundle.yaml 
+juju status | more
+ls 
+cd 
+juju kill-controller myjujucontroller
+juju tatus
+juju status
+lks
+ls
+cd 414_new/
+ls 
+./test.sh 
+ls
+vi test.sh 
+./test.sh 
+juju status | more
+clear
+juju status | more
+ls -ltrh
+juju status | more
+exit
+clear
+juju status
+ls
+clear
+juju status | more
+juju controllers
+juju status
+juju status | more
+ls
+docker ps -a
+juju status
+juju status | more
+ls -ltrh
+cd -
+ls
+ls 
+ls -ltrh
+cd 414_new/
+ls 
+cd 
+cd ankit/
+ls 
+vi testbed.py 
+clear
+juju status | more
+exit
+ssh 192.168.30.10 -l ubuntu
+juju status
+juju status | more
+ls 
+cd 414_new/
+ls 
+cd 
+cd 414
+ls 
+cd 
+exit
+juju status
+j
+juju status
+juju status | more
+juju ssh contrail-controller/0
+juju status
+juju status | more
+juju ssh contrail-analytics/0
+juju status | more
+juju ssh accel-contrail-agent/0
+juju status
+juju status | more
+juju status | grep -v "unit is ready" 
+clear
+ls 
+clear
+juju status | more
+juju ssh 1
+juju status | more
+juju ssh v
+juju ssh accel-contrail-agent/0
+juju status | more
+uname -r 
+ls
+ls -ltrh
+clear
+ls 
+clear
+jujus tatus 
+juju status | more
+juju ssh accel-contrail-agent/0
+ls 
+cd 414_new/
+ls 
+vi bundle.yaml 
+juju status
+juju status | more
+juju ssh accel-contrail-agent/0
+juju status | more
+q
+juju ssh 1
+juju status | more
+juju ssh 1
+juju status | more
+juju ssh 1
+juju status | more
+juju ssh accel-contrail-agent/0
+ls 
+ls -ltrh
+cd 
+ls 
+cd 63/
+ls 
+cd pkgs/
+ls 
+ls -ltrh
+cd ..
+ls 
+ls
+juju status
+juju status | more
+juju ssh 1
+juju status | more
+juju ssh contrail-openstack/1
+juju status
+juju status | more
+juju ssh contrail-openstack/2
+contrail-status
+juju status | more
+juju status
+ls 
+exit
+ls 
+cd 63/
+ls 
+ls *heat*
+ls 
+cd 
+cd /var/www/
+ls 
+cd html/
+sl 
+ls 
+cd 
+exit
+juju status | more
+exit
+juju status | grep dashboard
+exit
+juju status
+juju status | more
+ls -ltrh
+juju status | more
+juju ssh contrail-openstack/2
+ssh -l ubuntu 192.168.30.10
+ls 
+juju status | more
+juju ssh contrail-openstack/2
+juju status | more
+clear
+ls
+ls 
+clear
+ls 
+docker ps -a
+ls
+ls 
+juju ssh 1
+ls 
+clear
+ssh -l ubuntu 192.168.30.10
+juju status | mor
+juju ssh 0
+juju ssh 1
+clear
+ls 
+juju status
+juju status | more
+ip route
+juju status | more
+juju ssh 1
+juju ssh 0
+juju status | more
+juju ssh 0
+juju ssh neutron-api/0
+juju ssh 0
+ls 
+juju status
+ls 
+cd 414_63/
+ls 
+ls -ltrh
+cd 
+ls 
+ls -ltrh
+mv contrail-cloud-docker_4.1.4.0-63-ocata_xenial.tgz 414_62/
+cd 414_62/
+ls 
+ls -ltrh
+mv contrail-cloud-docker_4.1.4.0-63-ocata_xenial.tgz ../414_63/
+ls
+cd 414_63/
+ls 
+tar -xzvf *
+ls
+rm -rf contrail-cloud-docker_4.1.4.0-63-ocata_xenial.tgz
+ls 
+ls -ltrh
+clear
+ls 
+for i in $(ls *.tgz); do tar -xzf $i; rm $i; done
+ls
+ls -ltrh
+cp contrail-vrouter-packages_4.1.4.0-63.tgz ..
+cd ..
+ls 
+ls -ltrh
+juju status | more
+scp -r contrail-vrouter-packages_4.1.4.0-63.tgz ubuntu@192.168.30.10:/home/ubuntu
+ssh ubuntu@192.168.30.10
+cd 414_new/
+vi bundle.yaml 
+ssh 192.168.30.10 -l ubuntu
+juju status
+juju status
+ls 
+ls
+ls -ltrh
+mkdir 414_63
+ls 
+ls -ltrh
+zmv contrail-cloud-docker_4.1.4.0-63-ocata_xenial.tgz 
+juju status | more
+ls
+cd ankit/
+s 
+ls
+cd ..
+ls 
+juju ssh 0
+ls
+cd vrouter/
+ls 
+cd ..
+cd 
+cd pkg
+ls 
+ls python-geventhttpclient
+ls (python-geventhttpclient
+ls *python-geventhttpclient*
+ssh -l ubuntu 192.168.30.100
+ssh -l ubuntu 192.168.30.10
+ls 
+ls -ltrh
+ls 
+cd 
+ls 
+cd /var/www/html/
+ls 
+ls
+ls 
+cd 
+ls 
+cd 63
+ls 
+ls contrail-networking-docker
+ls contrail-networking-docker*
+cp contrail-newo
+scp -r contrail-networking-docker_4.1.4.0-63_xenial.tgz ubuntu@192.168.30.10:/home/ubuntu
+ssh -l ubuntu 192.168.30.5
+ssh -l ubuntu 192.168.10.10
+ssh -l ubuntu 192.168.30.10
+ls
+scp -r contrail-networking-docker_4.1.4.0-63_xenial.tgz ubuntu@192.168.30.10:/home/ubuntu
+ssh -l ubuntu 192.168.30.10
+juju status | more
+juju ssh 1
+juju status | more
+juju ssh contrail-openstack/1
+juju status
+juju status | more
+juju status 
+juju status  | more
+ls 
+juju status | more
+ls
+cd 
+ls 
+ls -ltrh
+scp docker-image-contrail-test-ci-ocata-4.1.4.0-59.tar.gz ubuntu@192.168.30.135:/home
+scp docker-image-contrail-test-ci-ocata-4.1.4.0-59.tar.gz ubuntu@192.168.30.135:/home/ubuntu
+ls 
+docker p -a
+juju ssh 0
+ls 
+cd ankit/
+pwd
+ls
+juju ssh 0
+juju ssh 1
+juju ssh 0
+ls 
+juju ssh 0
+juju ssh 1
+juju ssh 0
+ls 
+cd ankit/
+pwd
+ping noden17
+juju status | grep keystone
+ls
+cd 
+juju ssh 1
+juju ssh 0
+juju status | more
+juju ssh 0
+juju ssh 1
+juju status | more
+q
+juju status | more
+ip route
+contrail-status
+juju ssh 1
+ls
+cd UBUNTU/
+ls
+juju status
+ssh 192.168.30.132 -l ubuntu
+scp ubun* ubuntu@192.168.30.132:
+juju ssh 1
+juju status
+ssh 192.168.30.135 -l ubuntu
+scp ubun* ubuntu@192.168.30.135:
+ssh 192.168.30.135 -l ubuntu
+ls
+scp tin* ubuntu@192.168.30.135:
+ssh 192.168.30.135 -l ubuntu
+juju ssh 1
+juju status
+ssh -l ubuntu 192.168.30.131 -L 7279:192.168.30.131:80 -fN
+juju status
+juju ssh 1
+juju ssh 0
+ls 
+ssh -l ubuntu 192.168.30.10
+exit
+juju ssh 0
+juju status
+juju ssh 1
+ls
+cd TESTVI/
+juju ssh 0
+ls
+juju status
+scp -rp contrail-test ubuntu@192.168.30.135:juj
+juju ssh 0
+juju ssh 1
+cd 414_new/
+vi bundle.yaml 
+ssh 192.168.30.10 -l ubuntu
+juju debug-log
+juju status
+juju debug-log
+juju status
+ssh 192.168.30.136 -l ubuntu
+juju status
+juju debug-log
+juju status
+juju debug-log
+juju status
+juju ssh 1
+juju ssh 2
+juju ssh 0
+ls
+cd TESTV1
+cd TESTVI/
+pwd
+ls
+exit
+juju ssh 1
+exit
+juju status
+cd 414_62
+ls
+cat s1
+ls
+cd
+cd 413
+ls
+cd 414_62
+ls
+#juju attach contrail-analytics contrail-analytics=
+ls contrail-analytics-ubuntu16.04-4.1.4.0-62.tar.gz 
+juju attach contrail-analytics contrail-analytics=contrail-analytics-ubuntu16.04-4.1.4.0-62.tar.gz
+juju status
+ls contrail-analyticsdb-ubuntu16.04-4.1.4.0-62.tar.gz 
+juju attach contrail-analyticsdb contrail-analyticsdb=contrail-analyticsdb-ubuntu16.04-4.1.4.0-62.tar.gz
+exit
+juju status
+juju status | grep image
+juju status
+~~
+juju status
+juju status | grep image
+juju status
+ls 
+vi s1 
+ls 
+ls -ltrh
+cd 414_
+ls 
+cd 414
+ls 
+vi k 
+ls 
+cd 
+ls 
+exit
+ls 
+docker ps -a
+juju ssh 0
+juju ssh 1
+ls 
+ssh -l ubuntu 192.168.30.10
+juju ssh 0
+juju ssh 1
+juju ssh 0
+juju status | more
+ls
+juju ssh 0
+contrai-version
+contrail-status
+ls
+juju ssh 1
+exit
+juju ssh 1
+exit
+ls
+juju ssh 1
+exit
+juju ssh 1
+exit
+juju ssh 1
+ls 
+cd 414_new/
+ls 
+vi bundle.yaml 
+cd 
+ls 
+clear
+ls 
+cd 14jan/
+ls 
+ls -ltrh
+cd 
+ls 
+ls -ltrh
+mv bundle_nuthan.yaml 14jan/
+ls 
+cd 14jan/
+ls 
+vi bundle_nuthan.yaml 
+ls 
+clear
+ls 
+juju --version
+ls 
+juju status
+juju status | more
+ls 
+cd ..
+ls 
+cd ankit/
+ls 
+cd 
+cd 414_new/
+ls 
+vi test.sh 
+cd ..
+ls 
+cd 14jan/
+ls 
+vi bundle_nuthan.yaml 
+ls
+juju controllers
+exait
+exit
+ls 
+clear 
+ls 
+ls 
+cd 414_new/
+ls 
+clear
+cat /etc/*-release
+ls 
+vi bundle.yaml 
+ls 
+clear
+ip addr
+ls 
+mkdir 14jan
+cd 14jan/
+ls 
+git clone -b R5.0 https://github.com/Juniper/contrail-charms.git
+git clone -b R5 https://github.com/Juniper/contrail-charms.git
+ls
+cd contrail-charms/
+ls 
+cd ..
+pwd
+ls 
+ip addr
+ls 
+ls -ltrh
+cd /etc/data1
+ls 
+cd /etc
+ls 
+ls -ltrh
+cd 
+ls
+show ver
+ls
+juju status
+sudo docker ps
+sudo docker ps -a
+sudo docker ps
+juju status
+virsh domifaddr
+virsh domifad
+virsh domifaddr
+virsh
+virsh --list
+virsh list
+vim list
+clear
+show ip os nei
+vim list
+show ip os nei
+show ip os neo
+show ip os nei
+ls 
+exit
+ls 
+juju status
+juju status | more
+juju status
+ls 
+scp -r * root@noden17:/root/17
+scp -r * root@noden17:/root/n17
+ls 
+scp -r * root@nodem11:/root/n17
+scp -r * root@10.204.216.100:/root/n17
+ls 
+ls -ltrh
+history
+ip route
+ls 
+exit
+ip addr
+ip addr | more
+ip addr
+ip addr | more
+virsh list
+clear
+juju status | more
+juju status 0
+sudo su
+exit
+cli
+contrail-status
+ls
+exit
+ls 
+ip addr
+ip route
+ssh -l root 192.168.30.254
+ip addr2
+juju ssh 2
+juju ssh 1
+ip addr
+juju status
+claer
+clear
+ls 
+clear
+juju staus
+exit
