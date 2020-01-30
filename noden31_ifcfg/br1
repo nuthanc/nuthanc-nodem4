@@ -1,0 +1,4 @@
+HWADDR=ac:1f:6b:c3:27:25
+DEVICE=eno2
+ONBOOT=yes
+BRIDGE=br1

@@ -1,0 +1,33 @@
+[root@noden31 network-scripts]# cat ifcfg-eno1
+HWADDR=ac:1f:6b:c3:27:24
+DEVICE=eno1
+ONBOOT=yes
+BRIDGE=br0
+
+[root@noden31 network-scripts]# cat ifcfg-eno2
+HWADDR=ac:1f:6b:c3:27:25
+DEVICE=eno2
+ONBOOT=yes
+BRIDGE=br1
+
+[root@noden31 network-scripts]# cat ifcfg-br0
+DEVICE=br0
+ONBOOT=yes
+TYPE=Bridge
+BOOTPROTO=static
+IPADDR=10.204.218.106
+NETMASK=255.255.255.0
+GATEWAY=10.204.218.254
+STP=off
+DELAY=0
+
+[root@nodel2 network-scripts]# cat ifcfg-br1
+DEVICE=br1
+ONBOOT=yes
+TYPE=Bridge
+BOOTPROTO=static
+IPADDR=192.168.1.105
+NETMASK=255.255.255.0
+STP=off
+DELAY=0
+
