@@ -1,0 +1,40 @@
+scp -r sources.list 192.168.30.161
+scp -r sources.list ubuntu@192.168.30.161:/home/ubuntu
+juju ssh 192.168.30.161
+juju ubuntu@
+ssh -l ubuntu 192.168.30.161
+juju status
+ls
+scp -r sources.list ubuntu@192.168.30.162:/home/ubuntu 
+scp -r sources.list ubuntu@192.168.30.164:/home/ubuntu 
+sudo su
+exit
+juju status
+ssh -l ubuntu 192.168.30.162
+juju status
+juju statusq
+juju ssh neutron-api/0
+ex
+juju ssh neutron-api/0
+juju status
+ls
+ls -ltrh
+cd 14jan/
+ls 
+juju ssh ni/0
+juju status
+juju ssh nova-compute/0
+ls 
+mv sources.list s
+clear
+ls 
+mv s /etc/apt
+ls 
+cd /etc/apt
+ls 
+ls -ltrh
+juju status
+juju ssh 0
+contrail-status
+clear
+exit
