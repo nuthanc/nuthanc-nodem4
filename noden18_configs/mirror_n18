@@ -1,0 +1,6 @@
+[root@noden18 14jan]$cat modelconfig-proxy-nomirror.yaml 
+cloudinit-userdata: |
+juju-http-proxy: http://192.168.30.181:3128
+juju-https-proxy: http://192.168.30.181:3128
+apt-http-proxy: http://192.168.30.181:8080
+apt-https-proxy: http://192.168.30.181:8080
