@@ -1,0 +1,2001 @@
+vi /etc/ntp.conf 
+service ntpd status
+service ntp status
+juju ntp status
+juju ntp-master status
+juju ntpd status
+juju status
+vi /etc/ntp.conf 
+ssh root@10.87.82.129
+uname -a
+cat /etc/lsb-release 
+docker pull 10.84.5.81:5000/contrail-test-test:1908-6
+docker pull http://10.84.5.81:5000/contrail-test-test:1908-6
+docker pull https://10.84.5.81:5000/contrail-test-test:1908-6
+docker images
+docker pull 10.84.5.81:5000/contrail-test-test:1908-6
+export OS_INSECURE=True
+docker pull 10.84.5.81:5000/contrail-test-test:1908-6
+export WEBSERVER_HOST=“10.84.5.120”;
+export OS_INSECURE=True
+docker pull 10.84.5.81:5000/contrail-test-test:1908-6
+docker pull 10.84.5.81:5010/contrail-test-test:1908-6
+docker --version
+cat /etc/docker/daemon.json 
+docker pull ci-repo.englab.juniper.net:5010/contrail-test-test:1908-6
+docker images
+docker ps -a
+docker pull ci-repo.englab.juniper.net:5010/contrail-test-test:1908-6
+ping ci-repo.englab.juniper.net
+vi /etc/docker/daemon.json 
+service docker restart
+cat /etc/docker/daemon.json 
+docker pull 10.84.5.81:5010/contrail-test-test:1908-6
+ls
+./testrunner.sh list
+./testrunner.sh load 10.84.5.81:5010/contrail-test-test:1908-6
+./testrunner.sh load contrail-test-test:1908-6
+ping 10.84.5.81
+cd contrail-charms
+vi contrail-docker-bundle.yaml
+hostname
+ip addr show
+cd contrail-charms
+cd contrail-charms
+openstack flavor create --ram 512 --disk 1 --vcpus 1 m1.tiny
+openstack image list
+vi contrail-docker-bundle.yaml
+cd /etc/
+ls
+ls | grep openstackrc 
+source openstackrc 
+cd -
+source /etc/openstackrc 
+openstack flavor create --ram 512 --disk 1 --vcpus 1 m1.tiny
+wget http://192.16.20.137:35357/v3
+. demo-openrc
+cd contrail-charms
+ls
+vi contrail-docker-bundle.yaml
+juju-status
+juju status
+ssh root@10.87.79.61
+rm -rf /root/.ssh/known_hosts
+ssh root@10.87.79.61
+ssh none@10.87.79.61
+ssh 10.87.79.61
+docker -ps
+docker ps -a
+docker restart 840caa248eac; docker exec -it 840caa248eac bash
+cd contrail-charms
+vi sample_openrc
+source sample_openrc 
+openstack flavor create --ram 512 --disk 1 --vcpus 1 m1.tiny
+ls
+vi contrail_test_input.yaml
+exit
+vi contrail_test_input.yaml
+ls
+touch contrail_test_input_orig.yaml
+chmod 777 contrail_test_input_orig.yaml 
+cp contrail_test_input.yaml contrail_test_input_orig.yaml 
+vi contrail_test_input_orig.yaml 
+cat mycloud.yaml 
+vi contrail_test_input_orig.yaml 
+cd contrail-charms
+ls
+vi contrail-docker-bundle.yaml
+juju gui
+ssh root@10.87.79.61
+cd ..
+vi contrail_test_input
+vi contrail_test_input.yaml
+ssh root@10.87.79.12
+vi contrail_test_input.yaml
+ssh-keygen -t rsa
+vi contrail_test_input.yaml
+ssh-copy-id root@10.87.79.12
+vi contrail_test_input.yaml
+cp contrail_test_input.yaml contrail-charms/
+cd contrail-charms
+ls
+chmod 777 contrail_test_input.yaml 
+sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+ssh root@10.87.79.12
+sudo systemctl restart sshd
+sudo sed -i 's/#PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
+sudo systemctl restart sshd
+ssh root@10.87.79.12
+ssh-keygen -t rsa
+ssh-copy-id root@10.87.79.12
+ping 10.87.79.12
+ls
+ssh root@10.87.79.12
+ssh root@10.87.79.23
+ssh 10.87.79.23
+ssh contrail@10.87.79.23
+ssh none@10.87.79.23
+ssh None@10.87.79.23
+ssh NONE@10.87.79.23
+cd ..
+vi contrail_test_input.yaml
+vi contrail_test_input_orig.yaml 
+ifconfig
+vi contrail_test_input_orig.yaml 
+ps aux
+ssh mass@10.87.79.23
+ssh ubuntu@10.87.79.23
+juju-gui
+juju gui
+ssh admin@10.87.79.23
+su - ubuntu
+ssh heat-admin10.87.79.23
+ssh heat-admin@10.87.79.23
+ssh maas@10.87.79.23
+ssh contrail@10.87.79.23
+exit
+juju ssh machine 0
+juju ssh  0
+juju ssh 1
+juju status
+juju ssh 4
+juju ssh 0/lxd/0
+juju status
+ssh 10.87.79.9
+exit
+cat /etc/lsb-release 
+uname -a
+route -n
+juju ssh  0
+juju ssh 1
+juju ssh 2
+juju ssh 1
+juju ssh 0
+juju ssh 3
+juju ssh 4
+juju ssh 5
+juju ssh 6
+juju ssh 7
+juju status
+juju ssh 0/lxd/0
+juju ssh 0/lxd/1
+juju ssh 0/lxd/2
+juju ssh 0/lxd/3
+juju ssh 0/lxd/4
+juju ssh 0/lxd/5
+juju status
+juju ssh 0/lxd/6
+vi /etc/docker/daemon.json 
+docker ps -a
+docker pull ci-repo.englab.juniper.net:5010/contrail-test-test:1908-7
+docker pull ci-repo.englab.juniper.net:5010/contrail-test-test:master-803
+ping ci-repo.englab.juniper.net
+ping https://ci-repo.englab.juniper.net
+vi /etc/docker/daemon.json 
+docker pull 10.84.5.81:5010/contrail-test-test:1907-13
+docker pull 10.84.5.81:5010/contrail-test-test:R1907-13
+ping 10.84.5.81
+docker pull 10.84.5.81:5010/contrail-test-test:master-803
+docker images
+docker pull 10.84.5.81:5010/contrail-test-test:1908-13
+docker images
+ls
+cd contrail-charms
+docker images
+docker pull 10.84.5.81:5010/contrail-test-test:1908-13
+./testrunner.sh run -P contrail_test_input.yaml -f sanity -s 10.84.5.81:5010/contrail-test-test:1908-13
+docker delete 8b3be1344bc9
+docker remove 8b3be1344bc9
+docker pull 10.84.5.81:5010/contrail-test-test:1908-14
+./testrunner.sh list
+./testrunner.sh load 10.84.5.81:5010/contrail-test-test:1908-13
+./testrunner.sh run -P contrail_test_input.yaml -f sanity -s 10.84.5.81:5010/contrail-test-test:1908-14
+chmod +x ./testrunner.sh
+./testrunner.sh run -P contrail_test_input.yaml -f sanity -s 10.84.5.81:5010/contrail-test-test:1908-14
+docker ps
+docker ps -a
+./testrunner.sh run -P contrail_test_input.yaml -f sanity -s 11ba05d9251c
+./testrunner.sh run -P contrail_test_input.yaml -f sanity -s 10.84.5.81:5010/contrail-test-test:1908-14
+docker images
+docker pull 10.84.5.81:5010/contrail-test-test:1908-14
+./testrunner.sh run -P contrail_test_input.yaml -f sanity 10.84.5.81:5010/contrail-test-test:1908-14
+ls
+chmod +x testrunner.sh 
+chmod +x contrail_test_input.yaml 
+./testrunner.sh run -P contrail_test_input.yaml -f sanity 10.84.5.81:5010/contrail-test-test:1908-14
+systemctl docker status
+systemctl docker-engine status
+service docker status
+./testrunner.sh run -P contrail_test_input.yaml -f sanity 10.84.5.81:5010/contrail-test-test:1908-14
+docker images
+docker rmi 11ba05d9251c
+docker pull 10.84.5.81:5010/contrail-test-test:1908-14
+./testrunner.sh run -P contrail_test_input.yaml -f sanity 10.84.5.81:5010/contrail-test-test:1908-14
+./testrunner.sh -P contrail_test_input.yaml -f sanity -s 10.84.5.81:5010/contrail-test-test:1908-14
+./testrunner.sh run -P contrail_test_input.yaml -f sanity -s 10.84.5.81:5010/contrail-test-test:1908-14
+vi testrunner.sh 
+./testrunner.sh load 10.84.5.81:5010/contrail-test-test:1908-14
+./testrunner.sh list
+./testrunner.sh load x10.84.5.81:5010/contrail-test-test:1908-14
+./testrunner.sh load 10.84.5.81:5010/contrail-test-test:1908-14
+juju machine 0
+juju ssh 0
+service docker restart
+service docker status
+./testrunner.sh run -P contrail_test_input.yaml -f sanity -s 10.84.5.81:5010/contrail-test-test:1908-14
+./testrunner.sh run -P contrail_test_input.yaml -f sanity -s 11ba05d9251c
+juju status
+juju ssh 3
+juju ssh 0/lxd/0
+juju ssh 4
+ls
+vi sample_openrc 
+juju status
+vi openrc 
+ls
+ls | grep openrc 
+ci contrail-keystone-auth/
+cd contrail-keystone-auth/
+ls
+vi config.yaml 
+vi copyright 
+vi Makefile 
+vi README.md 
+cd -
+vi openrc 
+cp openrc openrc-orig
+vi openrc
+source openrc
+ssh 10.87.79.9
+juju ssh 0/lxd/0
+juju ssh 4
+juju ssh 3
+juju ssh 4
+juju ssh 3
+juju status
+juju status | grep webui
+juju ssh 5
+juju ssh 4
+vi openrc
+vi openrc-orig 
+juju status | grep 28
+vi openrc
+juju ssh 4
+vi contrail_test_input.yaml 
+juju ssh 5
+juju status
+juju ssh 5
+juju ssh 4
+juju ssh 3
+juju ssh 4
+juju status
+juju ssh 4
+vi contrail_test_input.yaml 
+vi contrail-docker-bundle.yaml
+docker ps -a
+juju ssh 4
+ls
+juju ssh 4
+juju status
+juju ssh  0/lxd/0
+juju ssh  0/lxd/2
+juju ssh 10.87.79.9
+sudo su
+juju ssh 0/lxd/0
+grep -r contrail-keystone-auth.conf .
+vi contrail-charms/contrail-keystone-auth/
+cd contrail-charms/contrail-keystone-auth/
+ls
+cd -
+juju ssh 0
+juju ssh 0/lxd/0
+juju ssh 0/lxd/1
+juju ssh 0/lxd/2
+juju ssh 0/lxd/3
+juju ssh 0/lxd/4
+juju ssh 0/lxd/5
+juju ssh 0/lxd/6
+juju ssh 1
+juju ssh 2
+juju ssh 3
+juju ssh 4
+juju ssh 5
+juju ssh 4
+juju ssh 0/lxd/2
+juju ssh 0/lxd/0
+juju ssh 4
+vi contrail-docker-bundle.yaml
+juju ssh 10.87.79.9
+juju ssh 0/lxd/0
+su -
+juju status
+juju ssh 4
+juju ssh 1
+juju ssh 4
+juju status
+exit
+docker images
+./testrunner.sh run -P contrail_test_input.yaml -f sanity -s 10.84.5.81:5010/contrail-test-test:1908-14
+exit
+juju ssh 1
+juju ssh 0/lxd/0
+juju ssh 4
+docker ps -a
+cd contrail-charms
+ls
+vi contrail_test_input.yaml 
+docker images
+yum install screen
+apt install screen
+sudo apt install screen
+screen -S sanity
+docker images
+./testrunner.sh run -P contrail_test_input.yaml -f sanity -s 10.84.5.81:5010/contrail-test-test:1908-14
+docker images
+service docker status
+chmod +x contrail_test_input.yaml 
+./testrunner.sh run -P contrail_test_input.yaml -f sanity -s 10.84.5.81:5010/contrail-test-test:1908-14
+vi vi /etc/docker/daemon.json
+service docker restart
+./testrunner.sh run -P contrail_test_input.yaml -f sanity -s 10.84.5.81:5010/contrail-test-test:1908-14
+vi /etc/docker/daemon.json
+juju ssh 4
+juju ssh 6
+juju ssh 5
+juju ssh 1
+juju ssh 3
+cd contrail-charms
+./testrunner.sh list
+./testrunner.sh run -P contrail_test_input.yaml -f sanity 10.84.5.81:5010/contrail-test-test:master-803
+vi ./testrunner.sh 
+./testrunner.sh run -P contrail_test_input.yaml -f sanity 10.84.5.81:5010/contrail-test-test:master-803
+docker images 10.84.5.81:5010/contrail-test-test 
+wget https://github.com/Juniper/contrail-test/tree/R5.1/testrunner.sh
+touch testrunner-orig.sh
+cp testrunner.sh testrunner-orig.sh
+vi testrunner-orig.sh 
+cp testrunner.sh.1 testrunner.sh
+rm  -rf testrunner.sh
+touch testrunner.sh
+cp testrunner.sh.1 testrunner.sh
+vi testrunner.sh
+chmod +x testrunner.sh
+./testrunner.sh run -P contrail_test_input.yaml -f sanity 10.84.5.81:5010/contrail-test-test:1907-14
+set +x
+./testrunner.sh run -P contrail_test_input.yaml -f sanity 10.84.5.81:5010/contrail-test-test:1907-14
+vi testrunner.sh
+vi testrunner-orig.sh 
+set -x
+./testrunner.sh run -P contrail_test_input.yaml -f sanity 10.84.5.81:5010/contrail-test-test:1907-14
+vi testrunner-orig.sh 
+vi testrunner.sh
+rm -rf testrunner:q!
+rm -rf testrunner.sh
+ls
+wget https://github.com/Juniper/contrail-test/tree/R5.0/testrunner.sh
+wget https://github.com/Juniper/contrail-test/raw/master/testrunner.sh
+:q!
+vi:q!
+ls
+vi testrunner.sh.2
+rm -rf testrunner.sh.1
+cp :q!
+touch testrunner.sh
+cp testrunner.sh.2 testrunner.sh
+./testrunner.sh run -P contrail_test_input.yaml -f sanity 10.84.5.81:5010/contrail-test-test:1907-14
+chmod +x testrunner.sh
+./testrunner.sh run -P contrail_test_input.yaml -f sanity 10.84.5.81:5010/contrail-test-test:1907-14
+ls
+set -x
+./testrunner.sh run -P contrail_test_input.yaml -f sanity 10.84.5.81:5010/contrail-test-test:1907-14
+docker images
+./testrunner.sh run -P contrail_test_input.yaml -f sanity 10.84.5.81:5010/contrail-test-test:1908-14
+wget https://github.com/Juniper/contrail-test/tree/R5.1/testrunner.sh
+vi o:q!
+vi openrc
+source openrc
+./testrunner.sh run -P contrail_test_input.yaml -f sanity 10.84.5.81:5010/contrail-test-test:1908-14
+juju ssh 3
+juju status
+ssh root@10.87.79.61
+./testrunner.sh run -P contrail_test_input.yaml -f sanity 10.84.5.81:5010/contrail-test-test:1908-14
+ls
+
+ls
+cd ..
+ls
+rm -rf testrunner.sh.1 testrunner.sh.2
+ls
+juju ssh ubuntu/1
+./testrunner.sh run -P contrail_test_input.yaml -f sanity 10.84.5.81:5010/contrail-test-test:1908-14
+ssh ubuntu@10.87.79.61
+set -x
+set +x
+vi contrail_test_input.yaml 
+wget https://github.com/Juniper/contrail-test/tree/R5.0/testrunner.sh
+wget https://github.com/Juniper/contrail-test/tree/R5.1/testrunner.sh
+vi testrunner.sh.1
+rm -rf testrunner.sh.1 testrunner.sh.2
+vi testrunner.sh
+vi contrail_test_input.yaml 
+juju status
+vi contrail_test_input.yaml 
+
+juju status
+juju ssh 3
+juju ssh 4
+juju status
+juju ssh 1
+vi contrail_test_input.yaml 
+./testrunner.sh run -P contrail_test_input.yaml -f sanity 10.84.5.81:5010/contrail-test-test:1908-6
+juju ssh 0
+juju ssh 0/lxd/0
+juju ssh 0/lxd/1
+juju ssh 0/lxd/2
+juju ssh 0/lxd/3
+juju ssh 0/lxd/4
+juju ssh 0/lxd/5
+juju ssh 0/lxd/6
+juju ssh 1
+juju ssh 2
+juju ssh 3
+juju ssh 4
+juju ssh 5
+juju ssh 6
+./testrunner.sh run -P contrail_test_input.yaml -f sanity 10.84.5.81:5010/contrail-test-test:1908-6
+juju status
+juju ssh 3
+./testrunner.sh run -P contrail_test_input.yaml -f sanity 10.84.5.81:5010/contrail-test-test:1908-6
+sudo passwd
+ssh-copy-id juju ssh 0
+ssh-keygen -t rsa
+ssh-copy-id juju ssh 0
+./testrunner.sh run -P contrail_test_input.yaml -f sanity 10.84.5.81:5010/contrail-test-test:1908-6
+juju ssh 3
+juju status
+juju ssh 3
+juju ssh 0
+juju ssh 1
+juju ssh 2
+ping 2.2.2.3
+passwd
+ssh-copy-id root@10.87.79.61
+./testrunner.sh run -P contrail_test_input.yaml -f sanity 10.84.5.81:5010/contrail-test-test:1908-14
+docker ps -a
+docker rm -f b447ce4cb9bc
+docker rm -f 01b0ebc65cc5
+docker rm -f f53c5bf00789
+docker rm -f 4b4cf2104877
+docker rm -f 54666e036dee
+docker rm -f b27768df01f6
+docker ps -a
+docker rm -f d9d73b84b835
+docker rm -f 3e754ff8c846
+docker ps -a
+docker exec -it 9e3add3a7422 bash
+cd contrail-charms
+ls
+source openrc
+docker ps -a
+docker rm -f 9e3add3a7422
+./testrunner.sh run -P contrail_test_input.yaml -f sanity 10.84.5.81:5010/contrail-test-test:1908-14
+juju-status
+juju status
+juju ssh 3
+ssh root@10.87.79.61
+juju status
+juju ssh 0
+sudo su
+vi /etc/ssh/sshd_config 
+service sshd restart
+cd contrail-charms
+docker exec -it 9e3add3a7422 bash
+docker ps -a
+docker rm -f e0b642e7213b
+docker exec -it baa93ccda0f2 bash
+./testrunner.sh run -P contrail_test_input.yaml -f sanity 10.84.5.81:5010/contrail-test-test:1908-14
+docker ps -a
+docker rm -f baa93ccda0f2
+docker exec -it 1444dbbe6708 bash
+ssh-keygen -t rsa
+juju status
+juju-status
+exit
+history
+sudo su
+exit
+juju status
+ssh-keygen -t rsa
+ssh-copy-id root@10.87.79.25
+exit
+ssh-copy-id root@10.87.79.9
+juju ssh 0/lxd/0
+ssh-copy-id root@10.87.79.9
+juju ssh 0/lxd/1
+ssh-copy-id root@10.87.79.10
+exit
+juju status
+juju ssh 0/lxd/2
+ssh-copy-id root@10.87.79.18
+juju ssh 0/lxd/3
+ssh-copy-id root@10.87.79.13
+juju ssh 0/lxd/4
+ssh-copy-id root@10.87.79.17
+juju ssh 0/lxd/5
+ssh-copy-id root@10.87.79.14
+juju ssh 0/lxd/6
+ssh-copy-id root@10.87.79.28
+juju ssh 1
+ssh-copy-id root@10.87.79.23
+juju ssh 2
+ssh-copy-id root@10.87.79.59
+juju ssh 2
+ssh-copy-id root@10.87.79.59
+ssh root@10.87.79.59
+juju ssh 2
+ssh root@10.87.79.59
+juju ssh 2
+ssh root@10.87.79.59
+juju ssh 3
+ssh root@10.87.79.61
+ssh-copy-id root@10.87.79.61
+juju ssh 4
+ssh-copy-id root@10.87.79.12
+juju status
+juju ssh 5
+ssh-copy-id root@10.87.79.27
+cd contrail-charms
+docker ps
+docker rm -f 1444dbbe6708
+./testrunner.sh run -P contrail_test_input.yaml -f sanity 10.84.5.81:5010/contrail-test-test:1908-14
+ls
+vi testrunner.sh 
+vi contrail_test_input.yaml 
+grep -r /usr/lib/python2.7/site-packages/paramiko/rsakey.p .
+juju ssh 3
+vi /usr/lib/python2.7/site.py
+juju status
+history
+juju status
+juju ssh 4
+juju status
+juju ssh 4
+history
+vi contrail-docker-bundle.yaml
+cd contrail-charms
+vi contrail-docker-bundle.yaml
+juju status
+juju destroy-model contrail
+juju deploy contrail-docker-bundle.yaml
+juju status
+juju ssh 0/lxd/0
+juju ssh 0/lxd/2
+juju status
+juju 0
+juju ssh 0
+juju 0
+juju ssh 0/lxd/2
+juju status
+exit
+juju ssh 0/lxd/2
+juju ssh 0
+juju ssh 0/lxd/2
+juju ssh 0
+juju ssh 0/lxd/2
+juju ssh 0
+uname -r
+cat /etc/lsb-release 
+juju status
+history
+cd contrail-charms
+vi contrail-docker-bundle.yaml
+juju add-model contrail
+juju deploy contrail-docker-bundle.yaml
+juju status
+history | grep git
+history | grep docker
+ls
+cd contrail-test-runs/
+ls
+cd ..
+history
+history 
+history | grep wget
+vi contrail_test_input.yaml
+history
+juju status
+juju ssh 0/lxd/0
+juju status
+cd contrail-
+cd contrail-charms
+vi contrail-docker-bundle.yaml
+history
+juju destroy-model contrail
+vi contrail-docker-bundle.yaml
+juju add-model contrail
+juju deploy contrail-docker-bundle.yaml
+juju status
+vi contrail-docker-bundle.yaml
+juju status
+juju ssh 1
+juju ssh 0/lxd/0
+juju status
+juju ssh 2
+juju ssh 1
+juju status
+juju ssh 1
+juju ssh 0/lxd/0
+juju ssh 0
+history
+juju destroy-model contrail
+cd contrail-charms
+vi contrail-docker-bundle.yaml
+juju add-model contrail
+juju deploy contrail-docker-bundle.yaml
+exit
+juju status
+history 
+history | grep PATH
+export PATH=$PATH:/snap/bin
+juju status
+juju ssh 0
+juju status
+juju ssh 0
+juju ssh 3
+juju ssh 0/lxd/4
+juju status
+juju ssh 0/lxd/5
+juju ssh 0
+juju status
+juju ssh 0/lxd/0
+juju status
+juju ssh 0/lxd/2
+keystone
+ll
+openstack
+cat mycloud.yaml 
+history | less
+cat /etc/openstackrc 
+juju status
+cat /etc/openstackrc 
+. /etc/openstackrc 
+openstack server list
+cd contrail-charms
+ls
+vi contrail-docker-bundle.yaml
+juju-charms
+juju status
+juju ssh 0/lxd/0
+juju ssh 0
+exho OS_URL
+echo OS_URL
+echo $OS_URL
+exit
+juju status
+exit
+juju status
+juju ssh 1
+juju status
+juju ssh 2
+juju status
+juju ssh 10.87.79.61
+juju ssh 4
+sudo su
+juju status
+juju ssh 0
+juju status
+juju ssh 0/lxd/0
+juju status
+cd contrail-charms
+history
+vi contrail-docker-bundle.yaml
+juju destroy-model contrail
+juju add-model contrail
+juju status
+cd contrail-charms
+juju add-model contrail
+juju deploy contrail-docker-bundle.yaml
+juju status
+vi contrail-docker-bundle.yaml
+juju ssh 3
+redis-server --version
+juju ssh 1
+juju ssh 0
+rpm -qa | grep -i kafka
+juju ssh 3
+juju status
+juju ssh 1
+juju ssh 2
+vi contrail-docker-bundle.yaml
+juju status
+juju ssh 3
+docker ps -a | grep redis
+docker ps -a
+juju ssh 3
+juju ssh 0
+vi contrail-docker-bundle.yaml
+cd contrail-charms
+vi contrail-docker-bundle.yaml
+juju destroy-model contrail
+juju add-model contrail
+juju deploy contrail-docker-bundle.yaml
+juju status
+history
+docker pull 10.84.5.81:5010/v2/contrail-test-test:master-871
+history | grep docker
+docker pull 10.84.5.81:5010/contrail-test-test:master-871
+docker ps
+ps -a | grep 5000
+ps -aux | grep 5000
+juju status
+cd contrail-charms
+vi contrail-docker-bundle.yaml
+ssh juju 0/lxd/1
+juju ssh 0/lxd/1
+juju ssh 0/lxd/2
+juju ssh 0/lxd/1
+juju ssh 0/lxd/2
+find . -name "rc"
+ls
+vi sample_openrc 
+vi openrc
+openstack
+source openrc
+openstack
+juju ssh 0/lxd/1
+juju ssh 0/lxd/2
+vi openrc
+source openrc
+openstack
+juju ssh 0/lxd/0
+exit
+juju ssh 4
+juju ssh 5
+juju ssh 3
+exit
+juju ssh 0/lxd/2
+juju status
+ssh juju 0/lxd/0
+juju ssh 0/lxd/0
+sudo su
+exit
+juju ssh 2
+juju status
+exit
+sudo su
+juju status
+exit
+juju status
+juju ssh 0
+juju ssh 0/lxd/0
+juju ssh 0/lxd/1
+juju ssh 0/lxd/2
+juju ssh 0/lxd/3
+juju ssh 0/lxd/4
+juju ssh 0/lxd/5
+juju ssh 0/lxd/6
+juju status
+juju ssh 1
+juju ssh 2
+juju ssh 3
+juju ssh 4
+juju 
+juju ssh 0/lxd/2
+juju ssh 2
+history | grep docker
+docker pull 10.84.5.81:5010/v2/contrail-test-test:master-871
+docker pull 10.84.5.81:5010/contrail-test-test:master-871
+juju status
+juju ssh 0
+juju ssh 2
+find . -name "contrail_common_env"
+find . -name "common_env"
+find . -name "common"
+sudo su
+exit
+juju status
+juju ssh 2
+juju ssh 0/lxd/2
+juju ssh 2
+juju-status
+juju status
+juju ssh 0
+juju status
+juju status | grep 10.87.79.11
+juju ssh 1
+juju ssh 1
+juju ssh 2
+juju status
+juju ssh 0
+juju status
+cd contrail-charms
+scp contrail-docker-bundle.yaml root@10.87.67.93:/root/madhura
+juju sudo su
+juju sudo 0
+juju ssh 0
+cd contrail-charms
+vi contrail-docker-bundle.yaml
+juju statu
+juju status
+history 
+vim .bashrc 
+vim .profile 
+juju status
+ll /snap/bin/
+vim .profile 
+juju status
+env $PATH
+echo $PATH
+vim .profile 
+vim /etc/profile
+vim /etc/profile.d/snap.sh
+pip
+snap help
+snap find openstack
+snap install openstack-cli
+juju status
+vim /etc/profile
+vim /etc/profile.d/snap.sh 
+vim .bashrc 
+. .bashre
+. .bashrs
+. .bashrc 
+juju status
+ll
+cat mycloud.yaml 
+ll .novaclient/
+ll .novaclient/21232f297a57a5a743894a0e4a801fc3/
+history
+cat openrc
+juju status
+juju ssh 0/lxd/2
+juju status
+juju ssh 0/lxd/0
+juju ssh 0/lxd/2
+juju ssh 0
+vim adminrc
+openstack 
+. adminrc 
+vim adminrc
+. adminrc 
+openstack 
+vim adminrc
+. adminrc 
+openstack project list
+openstack --debug  project list
+vim adminrc
+openstack --debug  token issue
+vim adminrc
+unset OS_USER_DOMAIN_ID
+. adminrc 
+openstack --debug  token issue
+openstack endpoint list
+openstack region list
+openstack endpoint list -h
+openstack endpoint list --region RegionOne
+openstack endpoint list --region RegionTwo
+openstack region list
+openstack endpoint list --region RegionOne
+openstack endpoint list --region RegionTwo
+openstack network list
+openstack endpoint list --region Regionone
+openstack endpoint list --region Regionon
+openstack endpoint list --region regionone
+openstack endpoint list --region regionOne
+history
+cd contrail-charms
+juju destroy-model contrail
+vi contrail-docker-bundle.yaml
+juju add-model contrail
+juju deploy contrail-docker-bundle.yaml
+juju status
+vi contrail-docker-bundle.yaml
+juju destroy-model contrail
+juju add-model contrail
+juju deploy contrail-docker-bundle.yaml
+juju status
+cd contrail-charms
+ls
+vim contrail-docker-bundle.yaml
+cd contrail-charms
+vi contrail-docker-bundle.yaml
+juju destroy-model contrail
+juju add-model contrail
+juju deploy contrail-docker-bundle.yaml
+juju status
+openstack endpoint list --region Juniper
+. adminrc 
+cd ..
+source openrc
+ls
+cd contrail-charms
+ls
+source openrc
+openstack endpoint list --region Juniper
+openstack endpoint list --region RegionOne
+openstack region list
+juju ssh 4
+juju ssh 2
+juju ssh 0/lxd/2
+source openrc
+openstack endpoint list --region Juniper
+juju ssh 0/lxd/2
+vi openrc
+source openrc
+openstack endpoint list --region Juniper
+ls
+juju ssh 0/lxd/2
+juju status
+juju ssh 5
+juju ssh 0
+neutron net-list
+neutron net-create vn10
+juju ssh 5
+juju ssh 0
+neutron net-list
+neutron net-show vn10
+openstack network --help
+openstack network liat
+openstack network list
+openstack network show vn10
+nova list
+nova list --all
+nova list --all-tenent
+openstack server list
+l
+neutron net-create vn20 --debug
+neutron subnet-create 2.2.2.0/24 vn10
+neutron subnet-create vn10 2.2.2.0/24 
+neutron subnet-create vn20 5.5.5.0/24  --debug
+wget http://download.cirros-cloud.net/0.3.4/cirros-0.3.4-x86_64-disk.img
+openstack image create "cirros" --file cirros-0.3.4-x86_64-disk.img --disk-format qcow2 --container-format bare --public
+openstack image list
+openstack security group list
+openstack keypair list 
+openstack flavour list 
+openstack flavor list 
+openstack flavor create --public mh.extra_tiny --id auto --ram 256 -disk 0 --vcpus 1 --rxtx-factor 1
+openstack flavor create --public mh.extra_tiny --id auto --ram 256 --disk 0 --vcpus 1 --rxtx-factor 
+openstack flavor list 
+openstack security group list
+openstack security group create global_http --description "Test Global connectivity"
+openstack security group list
+openstack keypair list
+openstack server create --flavor  mh.extra_tiny --image cirros --nic net-id=8cb4c19d-12f1-4967-8832-53799e76c1e6 --security-group f8316718-e0e4-480f-b195-d50908fa07cb --availability-zone NonProduction:compute-02  nonprod_test_vm
+openstack server list
+openstack server create --flavor  mh.extra_tiny --image cirros --nic net-id=8cb4c19d-12f1-4967-8832-53799e76c1e6 --security-group global_http testvm1
+openstack server list
+openstack network list
+openstack server create --flavor  mh.extra_tiny --image cirros --nic net-id=34b29f7b-ad49-4a31-9979-583184351584 --security-group global_http testvm2
+openstack server list
+ssh root@5.5.5.3
+juju ssh testvm2
+openstack server create --flavor  mh.extra_tiny --image cirros --nic net-id=34b29f7b-ad49-4a31-9979-583184351584 --security-group global_http testvm3 --debug
+openstack server list
+nova show testvm3
+openstack server show testvm3
+juju ssh
+juju ssh bms5
+juju status
+juju ssh 3
+cd contrail-charms
+ls
+vi contrail-docker-bundle.yaml
+history
+juju destroy-model contrail
+juju add-model contrail
+juju deploy contrail-docker-bundle.yaml
+juju status
+juju destroy-model contrail
+cd contrail-charms
+vi contrail-docker-bundle.yaml
+juju add-model contrail
+juju deploy contrail-docker-bundle.yaml
+juju status
+./testrunner.sh list
+exit
+./testrunner.sh run -S 10.84.5.81:5010/contrail-test-test:1910-15
+exit
+./testrunner.sh run -S 10.84.5.81:5010/contrail-test-test:1910-15
+exit
+cd contrail-charms
+vi contrail-docker-bundle.yaml
+juju destroy-model contrail
+juju add-model contrail
+juju deploy contrail-docker-bundle.yaml
+juju status
+ls
+cd ..
+ls
+vi contrail_test_input.yaml
+docker pull 10.84.5.81:5010/v2/contrail-test-test:1910-15
+cd contrail-charms
+docker pull 10.84.5.81:5010/v2/contrail-test-test:1910-15
+service docker status
+docker pull 10.84.5.81:5010/contrail-test-test:1910-15
+ls
+cd contrail-test/
+cd ..
+docker pull 10.84.5.81:5010/contrail-test-test:1910-15
+ls
+cd sanity/
+ls
+cd ..
+cd contrail-charms
+ls
+./testrunner.sh list
+./testrunner.sh load 10.84.5.81:5010/contrail-test-test:1910-15
+./testrunner.sh load /contrail-test-test:1910-15
+./testrunner.sh load contrail-test-test:1910-15
+./testrunner.sh load 6c6d3fb8793b
+ls
+python tools/configure.py .
+./testrunner.sh load contrail-test-test:1910-15 
+./testrunner.sh load contrail-test-test:1910-15
+./testrunner.sh list
+./testrunner.sh load ci-repo.englab.juniper.net:5010/contrail-test-test:1910-15
+./testrunner.sh load ci-repo.englab.juniper.net:5010/contrail-test-test:queens-5.0-554
+cd..
+cd ..
+./testrunner.sh list
+./testrunner.sh load ci-repo.englab.juniper.net:5010/contrail-test-test:queens-5.0-554
+./testrunner.sh load 10.84.5.81:5010/contrail-test-test:1910-15
+ls
+./testrunner.sh load 10.84.5.81:5010/contrail-test-test:1910-15
+./testrunner.sh load contrail-test-test:1910-15
+ls
+docker pas
+docker ps -a
+docker images
+./testrunner.sh list
+./testrunner.sh load 10.84.5.81:5010/contrail-test-test:1910-15
+./testrunner.sh load contrail-test-test:1910-15
+./testrunner.sh load 6c6d3fb8793b
+./testrunner.sh run -s 10.84.5.81:5010/contrail-test-test:1910-15
+screen -S sanity
+cd contrail-charms
+./testrunner.sh run -S 10.84.5.81:5010/contrail-test-test:1910-15
+./testrunner.sh run -s 10.84.5.81:5010/contrail-test-test:1910-15
+ls
+./testrunner.sh list
+docker ps -a
+docker -rm 4d6d0f4eff2a
+docker remove 4d6d0f4eff2a
+docker delete 4d6d0f4eff2a
+docker container rmcdae8b26263e
+docker container rm cdae8b26263e
+docker stop cdae8b26263e
+docker container rm cdae8b26263e
+docker ps -a
+docker ps
+docker exec -it 4d6d0f4eff2a bash
+docker ps
+docker exec -it 4d6d0f4eff2a bash
+ls
+vi contrail_test_input.yaml
+docker exec -it 4d6d0f4eff2a bash
+vi contrail_test_input.yaml
+docker exec -it 4d6d0f4eff2a bash
+vi contrail_test_input.yaml
+./testrunner.sh list
+docker ps 
+docker stop 4d6d0f4eff2a
+dodcker container rm 4d6d0f4eff2a
+docker container rm 4d6d0f4eff2a
+ls
+./testrunner.sh run -P contrail_test_input.yaml 10.84.5.81:5010/contrail-test-test:1910-15
+screen -S sanity
+juju ssh 10.87.79.61
+rm -rf /root/.ssh/known_hosts
+juju ssh 10.87.79.61
+juju status
+juju ssh 5
+vi contrail_test_input.yaml
+juju status
+vi contrail_test_input.yaml
+docker ps
+docker stop 85733bb881a7
+docker stop 35c4d51b6c5f
+docker container rm 35c4d51b6c5f
+docker container rm 85733bb881a7
+docker ps
+./testrunner.sh list
+./testrunner.sh run -P contrail_test_input.yaml 10.84.5.81:5010/contrail-test-test:1910-15
+vi contrail_test_input.yaml
+docker ps
+docker ps -a
+docker container rm 4b2be3e0350b
+docker container rm d2d6114e82b5
+docker container rm db32bdc1f425
+docker ps -a
+vi contrail_test_input.yaml
+juju ssh ubuntu@bms5
+juju status
+juju ssh ubuntu@5
+#./testrunner.sh run -k -P contrail_test_input.yaml 10.84.5.81:5010/contrail-test-test:1910-15
+juju ssh ubuntu@5
+./testrunner.sh run -k /home/ubuntu/.ssh -P contrail_test_input.yaml 10.84.5.81:5010/contrail-test-test:1910-15
+./testrunner.sh run -k /home/ubuntu/.ssh -P /root/contrail_test_input.yaml 10.84.5.81:5010/contrail-test-test:1910-15
+cd .ssh/
+ls
+cd 
+cd .ssh
+pwd
+./testrunner.sh run -k /root/.ssh -P /root/contrail_test_input.yaml 10.84.5.81:5010/contrail-test-test:1910-15
+cd
+./testrunner.sh run -k /root/.ssh -P /root/contrail_test_input.yaml 10.84.5.81:5010/contrail-test-test:1910-15
+ls -lrt
+./testrunner.sh run -k /root/.ssh -P contrail_test_input.yaml 10.84.5.81:5010/contrail-test-test:1910-15
+cd .ssh/
+ls
+cd
+./testrunner.sh run -k /root/.ssh/id_rsa.pub -P contrail_test_input.yaml 10.84.5.81:5010/contrail-test-test:1910-15
+cat /root/.ssh/id_rsa.pub 
+./testrunner.sh run -K /root/.ssh/id_rsa.pub -P contrail_test_input.yaml 10.84.5.81:5010/contrail-test-test:1910-15
+vim contrail_test_input.yaml
+./testrunner.sh run -K /root/.ssh/id_rsa.pub -P contrail_test_input.yaml 10.84.5.81:5010/contrail-test-test:1910-15
+juju ssh 5
+vim contrail_test_input.yaml
+./testrunner.sh run -K /root/.ssh/id_rsa.pub -P contrail_test_input.yaml 10.84.5.81:5010/contrail-test-test:1910-15
+ssh ubuntu@10.87.79.61
+ssh root@10.87.79.61
+juju status
+ssh root@10.87.79.27
+juju ssh 4
+juju ssh 5
+cat .ssh/id_rsa.pub 
+juju ssh 5
+./testrunner.sh run -K /root/.ssh/id_rsa.pub -P contrail_test_input.yaml 10.84.5.81:5010/contrail-test-test:1910-15
+ssh root@10.87.79.
+juju ssh 5
+ssh root@10.87.79.27
+ssh root@10.87.79.27
+juju status
+juju ssh 4
+ssh root@10.87.79.61
+./testrunner.sh run -K /root/.ssh/id_rsa.pub -P contrail_test_input.yaml 10.84.5.81:5010/contrail-test-test:1910-15
+ssh ubuntu@10.87.79.61
+ssh root@10.87.79.61
+ssh ubuntu@10.87.79.61
+./testrunner.sh run -K /root/.ssh/id_rsa.pub -P contrail_test_input.yaml 10.84.5.81:5010/contrail-test-test:1910-15
+vim contrail_test_input.yaml
+ssh ubuntu@10.87.79.61
+./testrunner.sh run -K /root/.ssh/id_rsa.pub -P contrail_test_input.yaml 10.84.5.81:5010/contrail-test-test:1910-15
+./testrunner.sh run -K /root/.ssh/id_rsa.pub -P contrail_test_input.yaml -s  10.84.5.81:5010/contrail-test-test:1910-15
+ssh ubuntu@10.87.79.61
+docker ps
+docker stop e6f21cbc2c80
+docker rm e6f21cbc2c80
+docker stop 25871c5c4c50
+docker rm 25871c5c4c50
+docker stop b7be9a51e341
+docker rm b7be9a51e341
+docker stop 1d51eed8fd04
+docker rm 1d51eed8fd04
+docker stop bc3255fc3f8a
+docker rm bc3255fc3f8a
+docker stop eb849f56cc6b
+docker rm eb849f56cc6b
+docker stop 0ff50e8f1c93
+docker rm 0ff50e8f1c93
+docker stop a9db3e167538
+docker rm a9db3e167538
+./testrunner.sh run -K /root/.ssh/id_rsa.pub -P contrail_test_input.yaml -f sanity -s 10.84.5.81:5010/contrail-test-test:1910-15
+dockee ps
+docker ps
+docker ps -a
+docker container rm 1596b6023b57
+
+vi adminrc 
+docker ps -a
+./testrunner.sh run -K /root/.ssh/id_rsa.pub -P contrail_test_input.yaml -s 10.84.5.81:5010/contrail-test-test:1910-15
+docker ps
+docke rps
+docker ps
+./testrunner.sh run -K /root/.ssh/id_rsa.pub -P contrail_test_input.yaml 10.84.5.81:5010/contrail-test-test:1910-15
+juju ssh 5
+juju ssh 1
+juju ssh 5
+juju ssh 2
+juju ssh 3
+juju ssh 4
+juju ssh 5
+ls -lrt
+vi contrail_test_input
+vi contrail_test_input.yaml
+pwed
+exit
+vi contrail_test_input_orig.yaml 
+screen -ls
+screen -xr sanity
+ls
+vi contrail-docker-bundle.yaml
+juju status --relations
+vi contrail-docker-bundle.yaml
+juju status --relations
+juju ssh 0
+juju ssh 1
+juju ssh 2
+cd contrail-charms
+vi contrail-docker-bundle.yaml
+juju status
+vi contrail-docker-bundle.yaml
+juju destroy-model contrail
+juju add-model contrail
+juju deploy contrail-docker-bundle.yaml
+ls
+vi /root/contrail-charms/contrail-docker-bundle.yaml
+ls -a
+juju deploy contrail-docker-bundle.yaml
+ls -lrth -a
+history
+vi contrail-docker-bundle.yaml
+juju deploy contrail-docker-bundle.yaml
+exit
+screen -ls
+screen -xr sanity
+ls -lrt
+cd contrail-charms
+ls -lrt
+vim contrail-docker-bundle.yaml
+cp contrail-docker-bundle.yaml /tmp/
+vi contrail-docker-bundle.yaml
+pwd
+cd contrail-charms
+ls
+juju add-model contrail
+juju deploy contrail-docker-bundle.yaml
+vi contrail-docker-bundle.yaml
+juju deploy contrail-docker-bundle.yaml
+vi contrail-docker-bundle.yaml
+juju deploy contrail-docker-bundle.yaml
+vi contrail-docker-bundle.yaml
+juju deploy contrail-docker-bundle.yaml
+vi contrail-docker-bundle.yaml
+juju deploy contrail-docker-bundle.yaml
+vi contrail-docker-bundle.yaml
+ls
+vi contrail-docker-bundle.yaml-master 
+vi contrail-docker-bundle.yaml
+juju deploy contrail-docker-bundle.yaml
+vi contrail-docker-bundle.yaml
+juju deploy contrail-docker-bundle.yaml
+vi contrail-docker-bundle.yaml
+juju deploy contrail-docker-bundle.yaml
+vi contrail-docker-bundle.yaml
+juju add-relation easyrsa contrail-analytics
+juju add-relation easyrsa:client contrail-analytics:yls-certificates
+juju add-relation easyrsa:client contrail-analytics:tls-certificates
+vi contrail-docker-bundle.yaml
+juju status
+vi contrail-docker-bundle.yaml
+juju status
+screen -xr sanity
+juju status
+ls
+cd contrail-charms
+ls
+cd ..
+ls
+git pull https://github.com/Juniper/contrail-charms
+git clone https://github.com/Juniper/contrail-charms
+mkdir contrail-charms-old-10/14
+mkdir contrail-charms-old-1014
+cp contrail-charms contrail-charms-old-1014/
+cp -r contrail-charms contrail-charms-old-1014/
+cd contrail-charms-old-1014/
+ls
+cd ..
+rm -rf contrail-charms
+git clone https://github.com/Juniper/contrail-charms
+cd contrail-charms
+ls
+cd ..
+cd contrail-charms-old-1014/
+cd contrail-charms/
+ls
+cp contrail-docker-bundle.yaml /root/contrail-charms
+cp sample_openrc /root/contrail-charms
+cp testrunner-orig.sh /root/contrail-charms
+cp testrunner.sh /root/contrail-charms
+cp -r tools /root/contrail-charms
+cp contrail_test_input.yaml /root/contrail-charms
+cd -
+cd ~
+cd contrail-charms
+ls
+vi contrail-docker-bundle.yaml 
+juju destroy-model contrail
+juju add-model contrail
+juju deploy contrail-docker-bundle.yaml
+vi /root/contrail-charms/contrail-agent/config.yaml 
+vi contrail-docker-bundle.yaml 
+cd ..
+ls
+rm -rf contrail-charms
+git clone https://github.com/Juniper/contrail-charms -b R5
+ls
+cd contrail-charms-old-1014/contrail-charms/
+ls
+cp contrail-docker-bundle.yaml /root/contrail-charms
+cp sample_openrc /root/contrail-charms
+cp testrunner-orig.sh /root/contrail-charms
+cp testrunner.sh /root/contrail-charms
+cp -r tools /root/contrail-charms
+cp contrail_test_input.yaml /root/contrail-charms
+cd ~
+cd contrail-charms
+ls
+vi contrail-docker-bundle.yaml 
+juju destroy-model contrail
+juju add-model contrail
+juju deploy contrail-docker-bundle.yaml
+juju status
+juju ssh 3
+ll
+cd contrail-charms
+ll
+less contrail-docker-bundle.yaml 
+juju status
+less contrail-docker-bundle.yaml 
+juju add-relation contrail-controller contrail-agent
+juju remove-unit ntp/6
+watch -n 2 -c juju status --color
+juju ssh 3 sudo contrail-status
+watch -n 2 -c juju status --color
+juju ssh 3 sudo contrail-status
+watch -n 2 -c juju status --color
+ls
+mkdir contrail-charms-R5
+cp contrail-charms contrail-charms-R5/
+cp -r contrail-charms contrail-charms-R5/
+rm -rf contrail-charms
+git clone https://github.com/Juniper/contrail-charms -b R5
+cp contrail-docker-bundle.yaml /root/contrail-charms
+cd contrail-charms-old-1014/
+cd contrail-charms/
+cp contrail-docker-bundle.yaml /root/contrail-charms
+cp sample_openrc /root/contrail-charms
+cp testrunner-orig.sh /root/contrail-charms
+cp testrunner.sh /root/contrail-charms
+cp -r tools /root/contrail-charms
+cp contrail_test_input.yaml /root/contrail-charms
+cd ~
+ls
+cd contrail-charms
+ls
+juju destroy-model contrail
+rm -rf contrail-docker-bundle.yaml 
+cd /root/contrail-charms-R5/contrail-charms/
+ls
+cp contrail-docker-bundle.yaml /root/contrail-charms
+cd -
+juju add-model contrail
+vi contrail-docker-bundle.yaml 
+juju deploy contrail-docker-bundle.yaml
+cd contrail-charms
+ls
+vi contrail-docker-bundle.yaml 
+diff contrail-docker-bundle.yaml /root/contrail-charms-old-1014/contrail-charms/contrail-docker-bundle.yaml
+diff contrail-docker-bundle.yaml /root/contrail-charms-R5/contrail-charms/contrail-docker-bundle.yaml
+history
+juju destroy-model contrail
+juju add-model contrail
+juju deploy contrail-docker-bundle.yaml
+juju status
+vi contrail-docker-bundle.yaml 
+juju add-relation contrail-controller contrail-agent
+juju status
+vi contrail-docker-bundle.yaml 
+juju destroy-model contrail
+juju add-model contrail
+juju deploy contrail-docker-bundle.yaml
+juju status
+vi contrail-docker-bundle.yaml 
+juju destroy-model contrail
+juju add-model contrail
+juju deploy contrail-docker-bundle.yaml
+screen -xr sanity
+cd contrail-charms
+vi contrail-docker-bundle.yaml 
+cd contrail-charms
+ls
+vi contrail-docker-bundle.yaml 
+history
+juju destroy-model contrail
+vi contrail-docker-bundle.yaml 
+juju add-model contrail
+juju deploy contrail-docker-bundle.yaml
+juju status
+juju destroy-model contrail
+cd contrail-charms
+ls
+vi contrail-docker-bundle.yaml 
+juju add-model contrail
+juju deploy contrail-docker-bundle.yaml
+juju status
+docker images
+docker exec -it bash
+docker exec -it 6c6d3fb8793b bash
+docker restart  6c6d3fb8793b; docker exec  6c6d3fb8793b kill -19 bash; docker exec -it  6c6d3fb8793b bash
+docker ps -a
+docker restart  44d30969afeb; docker exec  44d30969afeb kill -19 bash; docker exec -it  44d30969afeb bash
+clear
+juju status
+docker restart  44d30969afeb; docker exec  44d30969afeb kill -19 bash; docker exec -it  44d30969afeb bash
+juju ssh 0
+juju ssh 1
+juju ssh 2
+juju ssh 3
+juju ssh 4
+juju ssh 5
+juju ssh 0/lxd/0
+juju ssh 0/lxd/1
+juju ssh 0/lxd/2
+juju ssh 0/lxd/3
+juju ssh 0/lxd/4
+juju ssh 0/lxd/5
+docker restart  44d30969afeb; docker exec  44d30969afeb kill -19 bash; docker exec -it  44d30969afeb bash
+juju ssh 0/lxd/5
+docker restart  44d30969afeb; docker exec  44d30969afeb kill -19 bash; docker exec -it  44d30969afeb bash
+history
+ls
+vi /etc/docker/daemon.json 
+docker pull ci-repo.englab.juniper.net:5010/contrail-test-test:1911.1
+docker pull 10.84.5.81:5010/contrail-test-test:1911.1
+./testrunner.sh run -P contrail_test_input.yaml -f sanity -k -s 10.84.5.81:5010/contrail-test-test:1911.1
+vi contrail_test_input.yaml 
+./testrunner.sh run -P contrail_test_input.yaml -f sanity -s 10.84.5.81:5010/contrail-test-test:1911.1
+./testrunner.sh run -P contrail_test_input.yaml -f sanity -K -s 10.84.5.81:5010/contrail-test-test:1911.1
+./testrunner.sh run -P contrail_test_input.yaml -f sanity -K /root/.ssh/id_rsa.pub  -s 10.84.5.81:5010/contrail-test-test:1911.1
+ssh 10.87.79.61
+ssh 10.87.79.61 -l root
+ssh 10.87.79.61 -l ubuntu
+rm -rf /root/.ssh/known_hosts
+ssh 10.87.79.61 -l 
+ssh 10.87.79.61 -l ubuntu
+cd
+cat .ssh/id_rsa.pub 
+ssh 10.87.79.61 -l root
+ssh 10.87.79.61 -l ubuntu
+ssh 10.87.79.61 -l root
+./testrunner.sh run -P contrail_test_input.yaml -f sanity -K /root/.ssh/id_rsa.pub  -s 10.84.5.81:5010/contrail-test-test:1911.1
+#./testrunner.sh run -P contrail_test_input.yaml -f sanity -K /root/.ssh/id_rsa.pub  -s 10.84.5.81:5010/contrail-test-test:1911.1
+ls -lrt
+./testrunner.sh list
+./testrunner.sh run -P contrail_test_input.yaml  -k /root/.ssh/id_rsa  -s 10.84.5.81:5010/contrail-test-test:1911.1
+exit
+sudo su
+exit
+juju status
+juju ssh nova-compute/0
+juju ssh nova-compute/1
+juju ssh nova-compute/2
+juju ssh nova-compute/3
+juju status | grep agent
+ls -lrt
+vim contrail_test_input.yaml
+juju ssh 10.87.79.61
+sudo su
+whoami
+./testrunner.sh run -P contrail_test_input.yaml  -k /root/.ssh/id_rsa  -s 10.84.5.81:5010/contrail-test-test:1911.1
+./testrunner.sh run -P contrail_test_input.yaml  -k /root/.ssh/id_rsa  -s 10.84.5.81:5010/contrail-test-test:1911.2
+./testrunner.sh run -P contrail_test_input.yaml  -k /root/.ssh/id_rsa  -s 10.84.5.81:5010/contrail-test-test:1911.1
+whoami
+su
+whoami
+su
+ls
+docker ps -a
+docker rm 8cc08fa62d9a
+docker rm d51be389404c
+docker rm d4229e7f27d0
+docker ps -a
+docker rm d6710d1ce162
+docker ps -a
+docker rm 6a4eafc15b05
+docker rm 52fca4ebff27
+docker ps -a
+docker rm 34a9107c220c
+docker stop 34a9107c220c
+docker rm 34a9107c220c
+docker ps -a
+docker rm b187b82dc75a
+docker rm 1a2b1ecb262d
+docker ps -a
+docker stop e732c7011f04
+docker rm e732c7011f04
+docker ps -a
+sudo su
+juju status
+cd contrail-charms
+ls
+vi contrail-docker-bundle.yaml 
+juju status
+vi contrail-docker-bundle.yaml 
+ls
+vi contrail_test_input.yaml 
+./testrunner.sh run -P contrail_test_input.yaml  -k /root/.ssh/id_rsa  -s 10.84.5.81:5010/contrail-test-test:1911.2
+./testrunner.sh run -P contrail_test_input.yaml  -k /root/.ssh/id_rsa  -s 10.84.5.81:5010/contrail-test-test:1911.1
+screen -S sanity
+ip a | grep 10.87
+maasui
+ui
+ls
+vim contrail_test_input.yaml
+ls -lrt
+vi contrail_test_input_orig.yaml
+vim contrail_test_input.yaml
+vi contrail_test_input.yaml
+cd contrail-charms
+ls -lrt
+vi contrail_test_input.yaml
+history
+juju destroy-model contrail
+cd contrail-charms
+ls
+juju add-model contrail
+vi contrail-docker-bundle.yaml 
+juju destroy-model contrail
+juju add-model contrail
+juju deploy contrail-docker-bundle.yaml
+juju status
+ls
+cd contrail-charms
+ls
+vi sample_openrc 
+cd contrail-openstack/
+ls
+cd..
+cd ..
+cd contrail-controller/
+ls
+cd ..
+juju status
+juju ssh 0/lxd/0
+ls
+cd /root/
+ls
+cd contrail-test-runs/
+ls
+cd ..
+ls
+vi adminrc 
+screen -S sanity
+screen -xr sanity
+cd contrail-charms
+vi contrail-docker-bundle.yaml 
+histort
+history
+juju destroy-model contrail
+juju add-model contrail
+cd contrail-charms
+juju deploy contrail-docker-bundle.yaml
+juju status
+juju destroy-model contrail
+juju add-model contrail
+juju destroy-model contrail
+cd contrail-charms
+ls
+vi contrail-docker-bundle.yaml 
+juju add-model contrail
+juju deploy contrail-docker-bundle.yaml
+cat adminrc 
+vi contrail-charms/contrail-docker-bundle.yaml 
+juju status
+screen -xr sanity
+juju status
+cd contrail-charms
+vi contrail-docker-bundle.yaml 
+juju destroy-model contrail
+juju add-model contrail
+juju deploy contrail-docker-bundle.yaml
+juju status
+juju destroy-model contrail
+vi contrail-docker-bundle.yaml 
+juju destroy-model contrail
+juju add-model contrail
+juju deploy contrail-docker-bundle.yaml
+juju status
+cd contrail-charms
+vi contrail-docker-bundle.yaml 
+juju destroy-model contrail
+juju add-model contrail
+juju deploy contrail-docker-bundle.yaml
+juju sattus
+juju status
+juju destroy-model contrail
+juju add-model contrail
+juju destroy-model contrail
+cd contrail-charms
+vi contrail-docker-bundle.yaml 
+juju add-model contrail
+juju deploy contrail-docker-bundle.yaml
+juju status
+cd contrail-charms
+ls
+vi contrail-docker-bundle.yaml 
+#ifconfig enp2s10:1 <vip>:/25
+ip addr show
+juju status
+ssh juju 0
+juju ssh 0
+ping 10.87.79.23
+cd contrail-charms
+ls
+cat contrail-docker-bundle.yaml 
+ls
+cd -
+ls
+cd contrail-charms
+vi contrail-docker-bundle.yaml 
+exit
+cat /etc/resolv.conf 
+cat /etc/hostname 
+ping puppet
+ssh shajuvk@10.84.5.100
+juju ssh 0
+ssh 5b6-qfx5
+ssh 5b6-qfx5.juniper.net
+telnet 5b6-qfx5-con.englab.juniper.net
+telnet 5b6-qfx5-com.englab.juniper.net
+telnet 5b6-qfx5-con.englab.juniper.net
+cd contrail-charms
+vi contrail-docker-bundle.yaml 
+juju ssh 0
+juju status
+juju ssh 5
+vi contrail-docker-bundle.yaml 
+cd -
+history
+juju destroy-model contrail
+cd contrail-charms
+vi contrail-docker-bundle.yaml 
+juju add-model contrail
+vi contrail-docker-bundle.yaml 
+juju deploy contrail-docker-bundle.yaml
+ls
+cd -
+juju deploy contrail-docker-bundle.yaml
+ls
+cd contrail-charms
+ls
+vi contrail-docker-bundle.yaml 
+juju deploy contrail-docker-bundle.yaml
+vi contrail-docker-bundle.yaml 
+juju deploy contrail-docker-bundle.yaml
+vi contrail-docker-bundle.yaml 
+juju deploy ./contrail-docker-bundle.yaml
+vi contrail-docker-bundle.yaml 
+ll
+git status
+less contrail-controller/config.yaml 
+git pull
+less contrail-controller/config.yaml 
+history | grep git
+cd -
+ls
+rm -rf contrail-charms-R5
+mv contrail-charms contrail-charms-R5
+ls
+cd contrail-charms-R5/
+ls
+cd -
+git clone https://github.com/Juniper/contrail-charms -b R5
+cd contrail-charms
+ls
+cd -
+cd contrail-charms-R5
+ls
+cp contrail-docker-bundle.yaml /root/contrail-charms
+cd -
+cd contrail-charms
+ls
+vi contrail-docker-bundle.yaml 
+juju deploy ./contrail-docker-bundle.yaml
+screen -ls
+screen -xr  31731.sanity
+juju status
+juju ssh 1
+juju ssh 0
+juju ssh 1
+juju status
+juju ssh 0
+juju ssh 2
+juju ssh 3 ip a
+juju ssh 2 ip a
+juju status
+juju config contrail-controller
+juju ssh 1
+juju ssh 7
+juju ssh 3
+juju ssh 2
+juju status
+juju ssh 0
+juju ssh 1
+juju status
+juju ssh 2
+juju ssh 3
+juju ssh 2
+juju ssh 1
+juju ssh 2
+juju status
+juju ssh 2
+juju ssh 1
+juju ssh 3
+juju ssh 1
+juju ssh 3
+juju ssh 1
+juju ssh 3
+juju ssh 4
+juju ssh 5
+juju ssh 6
+juju ssh 1
+juju ssh 0
+juju ssh 1
+juju ssh 2
+juju ssh 3
+juju ssh 4
+juju status
+juju ssh 4
+juju status
+juju ssh 4
+juju ssh 2
+juju ssh 4
+virsh list
+ip addr
+uname -a
+more /etc/netplan/01-netcfg.yaml 
+juju ssh 4
+juju ssh 1
+juju ssh 4
+juju ssh 1
+juju ssh 2
+juju ssh 4
+juju ssh 1
+juju ssh 2
+juju ssh 3
+juju ssh 2
+juju ssh 1
+juju ssh 2
+juju ssh 3
+juju ssh 4
+juju ssh 5
+juju ssh 4
+juju ssh 1
+juju ssh 2
+juju ssh 1
+juju ssh 
+ifconfig
+juju status
+juju ssh 0
+juju ssh 1
+juju ssh 2
+juju ssh 3
+juju ssh 4
+juju ssh 5
+juju ssh 0
+juju ssh 1
+juju ssh 10.87.79.11
+juju ssh 0
+juju ssh 1
+juju ssh 0
+juju ssh 3
+juju ssh 4
+juju ssh 3
+juju ssh 2
+juju ssh 3
+juju ssh 2
+juju ssh 5
+juju status
+cd contrail-charms
+history
+juju destroy-model contrail
+juju add-model contrail
+vi contrail-docker-bundle.yaml 
+juju deploy contrail-docker-bundle.yaml
+cd -
+ls
+juju deploy contrail-docker-bundle.yaml
+cd -
+juju deploy ./contrail-docker-bundle.yaml
+juju status
+juju ssh 0
+juju ssh 1
+juju ssh 2
+juju ssh 3
+juju ssh 4
+juju ssh 5
+juju ssh 4
+cd contrail-charms
+vi contrail-docker-bundle.yaml 
+cd contrail-charms
+ls
+vi contrail-docker-bundle.yaml 
+ls
+cd ..
+ls
+git branch
+ls
+cd contrail-charms
+vi contrail-docker-bundle.yaml 
+juju destroy-model contrail
+juju add-model contrail
+juju deploy ./contrail-docker-bundle.yaml
+juju status
+juju status
+cat /etc/lsb-release 
+juju destroy-model contrail
+cd contrail-charms
+vi contrail-docker-bundle.yaml 
+juju add-model contrail
+juju deploy ./contrail-docker-bundle.yaml
+cat /etc/lsb-release 
+uname -a
+mass --version
+maas --version
+juju status
+cd contrail-charms
+vi contrail-docker-bundle.yaml 
+juju destroy-model contrail
+juju deploy ./contrail-docker-bundle.yaml
+juju-status
+juju status
+juju-status
+juju status
+cd contrail-charms
+cat contrail-docker-bundle.yaml 
+cat contrail-docker-bundle.yaml | grep 2002
+vi contrail-docker-bundle.yaml 
+juju destroy-model contrail
+juju add-model contrail
+juju deploy ./contrail-docker-bundle.yaml
+juju status
+vi contrail-charms/contrail-docker-bundle.yaml 
+juju destroy-model contrail
+juju add-model contrail
+juju deploy ./contrail-docker-bundle.yaml
+cd contrail-charms
+juju deploy ./contrail-docker-bundle.yaml
+vi contrail-charms
+cd contrail-charms
+ls
+vi contrail-docker-bundle.yaml 
+cp contrail-docker-bundle.yaml /tmp/
+vi contrail-docker-bundle.yaml 
+juju status
+vi contrail-docker-bundle.yaml 
+juju destroy-model contrail
+juju add-model contrail
+juju deploy ./contrail-docker-bundle.yaml
+juju status
+docker ps
+vi /etc/docker/daemon.json 
+juju status
+vi /etc/docker/daemon.json 
+juju status
+vi contrail-docker-bundle.yaml 
+juju destroy-model contrail
+juju add-model contrail
+juju deploy ./contrail-docker-bundle.yaml
+juju status
+cd contrail-charms
+vi contrail-docker-bundle.yaml 
+juju destroy-model contrail
+juju add-model contrail
+juju deploy ./contrail-docker-bundle.yaml
+juju status
+cd contrail-charms
+vi contrail-docker-bundle.yaml 
+uanme -a
+cat /etc/lsb-release 
+juju status
+lsb_release -a
+exit
+screen -xr  31731.sanity
+screen -ls
+uptime
+screen -S shaju
+histroy
+history
+cd contrail-charms
+ls
+cd ..
+ls
+cp contrail_test_input.yaml contrail-charms
+cd contrail-charms
+ls
+vi contrail_test_input.yaml 
+cd -
+ls
+cp testrunner.sh contrail-charms
+cd -
+./testrunner.sh run -P contrail_test_input.yaml  -k /root/.ssh/id_rsa  -s svl-artifactory.juniper.net/contrail-nightly/contrail-test-test:2002.2
+ls
+docker pull svl-artifactory.juniper.net/contrail-nightly/contrail-test-test:2002.2
+vi contrail-docker-bundle.yaml 
+vi /etc/resolv.conf 
+cd -
+ls
+./testrunner.sh run -P contrail_test_input.yaml  -k /root/.ssh/id_rsa  -s svl-artifactory.juniper.net/contrail-nightly/contrail-test-test:2002.2
+./testrunner.sh run -P contrail_test_input.yaml -f sanity -s svl-artifactory.juniper.net/contrail-nightly/contrail-test-test:2002.2
+./testrunner.sh run -P contrail_test_input.yaml -f sanity -s svl-artifactory.juniper.net/contrail-nightly/contrail-test-test:2002.12
+./testrunner.sh run -P contrail_test_input.yaml -f sanity -s svl-artifactory.juniper.net/contrail-nightly/contrail-test-test:2002.17
+vi /etc/resolv.conf 
+./testrunner.sh run -P contrail_test_input.yaml -f sanity -s svl-artifactory.juniper.net/contrail-nightly/contrail-test-test:2002.17
+ls
+vi contrail_test_input.yaml
+docker --version
+vi /etc/docker/daemon.json 
+systemctl restart docker
+./testrunner.sh run -P contrail_test_input.yaml -f sanity -s svl-artifactory.juniper.net/contrail-nightly/contrail-test-test:2002.17
+docker pull svl-artifactory.juniper.net/contrail-nightly/contrail-test-test:2002.2
+docker ps
+docker ps -a
+docker pull svl-artifactory.juniper.net/contrail-nightly/contrail-test-test:2002.17
+docker ps
+docker ps -a
+docker ps
+docker ps -a
+docker rm 9c0e3e2df9bf
+docker rm 6a70c0ca32a0
+docker ps -a
+docker rm √
+docker rm m abe107ba5f70
+docker rm 6312c52a74ba
+docker rm abe107ba5f70
+docker r ps -a
+docker ps -a
+docker ps
+docker pull svl-artifactory.juniper.net/contrail-nightly/contrail-test-test:2002.17
+docker start  PORTS               NAMES
+root@5b6s1:~# docker ps
+root@5b6s1:~# docker ps -a
+docker ps -a
+docker images
+docker start 7458a7b35a0c
+docker start 
+docker start 7458a7b35a0c
+./testrunner.sh run -P contrail_test_input.yaml -f sanity -s svl-artifactory.juniper.net/contrail-nightly/contrail-test-test:2002.17
+./testrunner.sh run -P contrail_test_input.yaml -f sanity -s svl-artifactory.juniper.net/contrail-nightly/contrail-test-test:2002.17 -k /root/.ssh/id_rsa -K /root/.ssh/id_rsa.pub 
+./testrunner.sh run -k /root/.ssh/id_rsa -P contrail_test_input.yaml -f sanity -s svl-artifactory.juniper.net/contrail-nightly/contrail-test-test:2002.17 
+vi contrail_test_input.yaml
+vi 
+ls
+vi adminrc 
+./testrunner.sh run -k /root/.ssh/id_rsa -P contrail_test_input.yaml -f sanity -s svl-artifactory.juniper.net/contrail-nightly/contrail-test-test:2002.17 
+vi contrail-charms/
+vi contrail-charms/contrail-docker-bundle.yaml 
+juju status
+juju ssh 0/lxd/0
+./testrunner.sh run -k /root/.ssh/id_rsa -P contrail_test_input.yaml -f sanity -s svl-artifactory.juniper.net/contrail-nightly/contrail-test-test:2002.17 
+cat .ssh/id_rsa.pub 
+vi contrail_test_input.yaml
+vi contrail-charms
+cd contrail-charms
+ls
+cd -
+ls
+vi adminrc 
+vi contrail_test_input.yaml
+ls
+vi adminrc 
+ps -ef
+ps -ef | grep 500
+ps -ef | grep 5
+ls
+juju status
+cat /etc/os*
+juju status
+juju controllers
+juju models
+juju clouds
+juju ssh 10.87.79.25
+ls
+cd /var/log
+ls
+exit
+juju status
+juju ssh 10.87.79.23
+yes
+root@5b6s1:~#  
