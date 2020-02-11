@@ -1,0 +1,65 @@
+Err:1 http://security.ubuntu.com/ubuntu bionic-security InRelease
+  Could not connect to 192.168.30.181:3128 (192.168.30.181). - connect (111: Connection refused)
+Err:2 http://us.archive.ubuntu.com/ubuntu bionic InRelease
+  Could not connect to 192.168.30.181:3128 (192.168.30.181). - connect (111: Connection refused)
+Err:3 http://us.archive.ubuntu.com/ubuntu bionic-updates InRelease
+  Unable to connect to 192.168.30.181:3128:
+Reading package lists... Done
+
+[root@noden18 14jan]$cat modelconfig-proxy-nomirror.yaml 
+cloudinit-userdata: |
+juju-http-proxy: http://192.168.30.181:3128
+juju-https-proxy: http://192.168.30.181:3128
+
+virt-install --name juju --ram 16384 --disk /var/lib/libvirt/images/std_ubuntu1.img --network bridge=br1 --vcpus 4 --import --noautoconsole
+virt-install --name neutron --ram 32768 --disk /var/lib/libvirt/images/std_ubuntu2.img --network bridge=br1 --vcpus 4 --import --noautoconsole
+
+sudo mkdir -p ~maas
+sudo chown maas:maas ~maas
+sudo chsh -s /bin/bash maas
+sudo -u maas -i ssh-copy-id root@localhost
+sudo -u maas ssh-keygen
+sudo -u maas -i ssh-copy-id root@localhost
+sudo -u maas virsh -c qemu+ssh://root@localhost/system list --all
+
+virt-install --name juju \
+  --disk size=20,path=/var/lib/libvirt/images/std_ubuntu1.img \
+  --vcpus=4 \
+  --ram=4096 \
+  --network bridge=br1,model=virtio \
+  --boot network \
+  --virt-type kvm \
+  --import \
+  --os-type Linux \
+  --graphics vnc \
+  --serial pty \
+  --noautoconsole \
+  --console pty,target_type=virtio
+
+virt-install --name neutron \
+  --disk size=20,path=/var/lib/libvirt/images/std_ubuntu2.img \
+  --vcpus=4 \
+  --ram=4096 \
+  --network bridge=br1,model=virtio \
+  --boot network \
+  --virt-type kvm \
+  --import \
+  --os-type Linux \
+  --graphics vnc \
+  --serial pty \
+  --noautoconsole \
+  --console pty,target_type=virtio
+
+  ubuntu@noden19:/var/log$ ip route
+default via 192.168.30.18 dev eno1 proto static 
+192.168.30.0/24 dev eno1 proto kernel scope link src 192.168.30.186 
+192.168.40.0/24 dev enp175s0np0s0 proto kernel scope link src 192.168.40.2 
+
+https://10.87.79.11:17070/model/ee1a0c27-d2f1-4afd-80e5-3bf2e7422102/tools/2.4.7-bionic-amd64 from 10.87.79.25 bms2
+
+export action=import_cluster 
+export orchestrator=juju 
+export juju_controller=10.87.79.1 
+export juju_controller_user=root 
+export juju_model=contrail 
+export juju_controller_password=c0ntrail123
