@@ -63,6 +63,11 @@ cat net-default.xml
 virsh net-define net-default.xml
 virsh net-autostart default  
 virsh net-start default
+
+virsh pool-define-as default dir - - - - "/var/lib/libvirt/images"
+virsh pool-autostart default  
+virsh pool-start default
+
 bash en_forwarding.sh
 
 juju add-cloud mymaas --local
