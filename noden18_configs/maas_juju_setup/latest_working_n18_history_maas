@@ -21,6 +21,7 @@ ifconfig
 vi /etc/netplan/01-netcfg.yaml 
 netplan generate
 netplan apply
+
 dpkg-reconfigure maas-region-controller
 ssh-keygen
 maas createadmin
@@ -63,3 +64,17 @@ virsh net-define net-default.xml
 virsh net-autostart default  
 virsh net-start default
 bash en_forwarding.sh
+
+juju add-cloud mymaas --local
+Cloud type: maas
+http://10.204.216.194:5240/MAAS
+
+juju add-credential mymaas
+Only to local
+Enter credential name: mycred
+region: default
+aouth: From ui
+
+juju bootstrap --debug --no-gui --bootstrap-constraints tags=juju mymaas myjujucontroller --bootstrap-series=bionic --config bootstrap-timeout=1300
+
+juju deploy <give-bundle.yaml-here>
