@@ -1,0 +1,28 @@
+root@noded2:~# cat /etc/netplan/01-netcfg.yaml 
+# This file describes the network interfaces available on your system
+# For more information, see netplan(5).
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    enp6s0f0:
+      dhcp4: no
+      addresses: [10.204.216.57/24]
+      gateway4: 10.204.216.254
+      nameservers:
+        addresses: [8.8.8.8]
+    enp4s0f0:
+      dhcp4: no
+    enp4s0f1:
+      dhcp4: no 
+  bridges:
+    br1:
+      interfaces: [enp4s0f1]
+      addresses: [192.168.11.2/24]
+      gateway4: 192.168.11.254
+      nameservers:
+        addresses: [8.8.8.8]
+    br2:
+      interfaces: [enp4s0f0]
+      addresses: [192.168.21.2/24]
+      gateway4: 192.168.21.254
