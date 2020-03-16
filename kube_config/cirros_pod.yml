@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cirros
+spec:
+  containers:
+  - name: cirros
+    image: cirros
+    imagePullPolicy: IfNotPresent
+  nodeSelector:
+    slave: c21
