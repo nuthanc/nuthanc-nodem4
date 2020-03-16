@@ -1,0 +1,75 @@
+global_configuration:
+  REGISTRY_PRIVATE_INSECURE: True
+  CONTAINER_REGISTRY: bng-artifactory.juniper.net/contrail-nightly
+provider_config:
+  bms:
+    ssh_pwd: c0ntrail123
+    ssh_user: root
+    ntpserver: 10.204.217.158
+    domainsuffix: englab.juniper.net
+instances:
+  nodec19:
+    provider: bms
+    ip: 10.204.217.4
+    roles:
+      config_database:
+      config:
+      control:
+      analytics_database:
+      analytics:
+      webui:
+      k8s_master:
+      kubemanager:
+  nodec21:
+    provider: bms
+    ip: 10.204.217.6
+    roles:
+      k8s_node:
+      vrouter:
+        VROUTER_GATEWAY: 10.204.217.254
+  nodei18:
+    provider: bms
+    ip: 10.204.217.130
+    roles:
+      k8s_node:
+      vrouter:
+        VROUTER_GATEWAY: 10.204.217.254
+contrail_configuration:
+  KUBERNETES_PUBLIC_FIP_POOL: {'project': 'k8s-default', 'domain': 'default-domain', 'name': '__fip_pool_public__', 'network': '__public__'}
+  KUBERNETES_IP_FABRIC_SUBNETS: 10.204.217.64/27
+  CLOUD_ORCHESTRATOR: kubernetes
+  CONTROLLER_NODES: 10.204.217.4
+  CONTROL_NODES: 10.204.217.4
+  KUBERNETES_API_NODES: 10.204.217.4
+  KUBERNETES_API_SERVER: 10.204.217.4
+  CONTAINER_REGISTRY: bng-artifactory.juniper.net/contrail-nightly
+  REGISTRY_PRIVATE_INSECURE: True
+  CONTRAIL_VERSION: "2003.16"
+  RABBITMQ_NODE_PORT: 5673
+  VROUTER_GATEWAY: 10.204.217.254
+  LOG_LEVEL: SYS_DEBUG
+test_configuration:
+    cfgm0_host_string: root@10.204.217.4
+    cfgm0_host_pwd: c0ntrail123
+    cluster_id: clusterc19c20c21i16i18 
+    image_web_server: 10.84.5.120
+    use_project_scoped_token: True
+    public_host: 10.84.5.120
+    ext_routers:
+        blr-mx2: 192.168.10.100
+    router_asn: 64512
+    public_rt: 11314
+    public_subnet: 10.204.219.48/29
+    public_virtual_network: 10.204.219.48/29 
+    web_server:
+        server: 10.204.216.50
+        username: bhushana
+        password: c0ntrail!23
+        report_path: /home/bhushana/Documents/technical/sanity/fb-sanity/FB-master-k8s-centos7-ha-ansible-sanity
+        log_path: /home/bhushana/Documents/technical/logs
+        web_root: Docs/logs
+    mail_server:
+        server: 10.204.216.49
+        port: 25
+        to: dl-contrail-sw@juniper.net
+        sender: contrailbuild@juniper.net
