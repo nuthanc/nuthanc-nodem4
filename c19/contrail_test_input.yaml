@@ -1,6 +1,16 @@
+deployment:
+  type:
+    contrail:
+      branch: master
+      registry: bng-artifactory.juniper.net/contrail-nightly
+  sku: queens
+  os: centos7
+  version: null
+  orchestrator: kubernetes
+  deployer: contrail-ansible-deployer
 global_configuration:
   REGISTRY_PRIVATE_INSECURE: True
-  CONTAINER_REGISTRY: bng-artifactory.juniper.net/contrail-nightly
+  CONTAINER_REGISTRY: svl-artifactory.juniper.net/contrail-nightly
 provider_config:
   bms:
     ssh_pwd: c0ntrail123
@@ -42,34 +52,9 @@ contrail_configuration:
   CONTROL_NODES: 10.204.217.4
   KUBERNETES_API_NODES: 10.204.217.4
   KUBERNETES_API_SERVER: 10.204.217.4
-  CONTAINER_REGISTRY: bng-artifactory.juniper.net/contrail-nightly
+  CONTAINER_REGISTRY: svl-artifactory.juniper.net/contrail-nightly
   REGISTRY_PRIVATE_INSECURE: True
-  CONTRAIL_VERSION: "2003.16"
+  CONTRAIL_VERSION: "1912.45"
   RABBITMQ_NODE_PORT: 5673
   VROUTER_GATEWAY: 10.204.217.254
   LOG_LEVEL: SYS_DEBUG
-test_configuration:
-    cfgm0_host_string: root@10.204.217.4
-    cfgm0_host_pwd: c0ntrail123
-    cluster_id: clusterc19c20c21i16i18 
-    image_web_server: 10.84.5.120
-    use_project_scoped_token: True
-    public_host: 10.84.5.120
-    ext_routers:
-        blr-mx2: 192.168.10.100
-    router_asn: 64512
-    public_rt: 11314
-    public_subnet: 10.204.219.48/29
-    public_virtual_network: 10.204.219.48/29 
-    web_server:
-        server: 10.204.216.50
-        username: bhushana
-        password: c0ntrail!23
-        report_path: /home/bhushana/Documents/technical/sanity/fb-sanity/FB-master-k8s-centos7-ha-ansible-sanity
-        log_path: /home/bhushana/Documents/technical/logs
-        web_root: Docs/logs
-    mail_server:
-        server: 10.204.216.49
-        port: 25
-        to: dl-contrail-sw@juniper.net
-        sender: contrailbuild@juniper.net
