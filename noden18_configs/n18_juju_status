@@ -1,0 +1,56 @@
+root@noden18:~# juju status
+Model    Controller        Cloud/Region    Version  SLA          Timestamp
+default  myjujucontroller  mymaas/default  2.7.3    unsupported  00:28:35-07:00
+
+App                     Version  Status   Scale  Charm                   Store       Rev  OS      Notes
+contrail-agent                   active       1  contrail-agent          local         0  ubuntu  exposed
+contrail-agent-dpdk              waiting      0  contrail-agent          local         0  ubuntu  exposed
+contrail-analytics               waiting      1  contrail-analytics      local         0  ubuntu  exposed
+contrail-analyticsdb    2003-9   active       1  contrail-analyticsdb    local         0  ubuntu  exposed
+contrail-controller     2003-9   active       1  contrail-controller     local         0  ubuntu  exposed
+contrail-keystone-auth           active       1  contrail-keystone-auth  local         0  ubuntu  exposed
+contrail-openstack      2003-9   active       2  contrail-openstack      local         0  ubuntu  exposed
+glance                  16.0.1   active       1  glance                  jujucharms  294  ubuntu  exposed
+keystone                13.0.2   active       1  keystone                jujucharms  310  ubuntu  exposed
+mysql                   5.7.20   active       1  percona-cluster         jujucharms  284  ubuntu  
+neutron-api             12.1.0   active       1  neutron-api             jujucharms  283  ubuntu  exposed
+nova-cloud-controller   17.0.12  active       1  nova-cloud-controller   jujucharms  341  ubuntu  exposed
+nova-compute            17.0.12  active       1  nova-compute            jujucharms  312  ubuntu  exposed
+nova-compute-dpdk                waiting      0  nova-compute            jujucharms  312  ubuntu  exposed
+ntp                     3.2      active       3  ntp                     jujucharms   39  ubuntu  
+openstack-dashboard     13.0.2   active       1  openstack-dashboard     jujucharms  299  ubuntu  exposed
+rabbitmq-server         3.6.10   active       1  rabbitmq-server         jujucharms   99  ubuntu  
+ubuntu                  18.04    active       1  ubuntu                  jujucharms   15  ubuntu  
+
+Unit                       Workload  Agent  Machine  Public address  Ports                       Message
+contrail-analytics/0*      waiting   idle   0        192.168.30.4                                alarm-gen is not ready. Reason: (Redis-UVE:AggregateRedis[None] connection down)
+contrail-analyticsdb/0*    active    idle   0        192.168.30.4                                Unit is ready
+contrail-controller/0*     active    idle   0        192.168.30.4    8080/tcp,8082/tcp,8143/tcp  Unit is ready
+contrail-keystone-auth/0*  active    idle   0/lxd/0  192.168.30.8                                Unit is ready
+glance/0*                  active    idle   0/lxd/1  192.168.30.7    9292/tcp                    Unit is ready
+keystone/0*                active    idle   0/lxd/2  192.168.30.13   5000/tcp                    Unit is ready
+mysql/0*                   active    idle   0/lxd/3  192.168.30.12   3306/tcp                    Unit is ready
+neutron-api/0*             active    idle   2        192.168.30.6    9696/tcp                    Unit is ready
+  contrail-openstack/0*    active    idle            192.168.30.6                                Unit is ready
+  ntp/0*                   active    idle            192.168.30.6    123/udp                     chrony: Ready
+nova-cloud-controller/0*   active    idle   0/lxd/4  192.168.30.9    8774/tcp,8778/tcp           Unit is ready
+nova-compute/0*            active    idle   1        192.168.30.5                                Unit is ready
+  contrail-agent/0*        active    idle            192.168.30.5                                Unit is ready
+  contrail-openstack/1     active    idle            192.168.30.5                                Unit is ready
+  ntp/2                    active    idle            192.168.30.5    123/udp                     chrony: Ready
+openstack-dashboard/0*     active    idle   0/lxd/5  192.168.30.11   80/tcp,443/tcp              Unit is ready
+rabbitmq-server/0*         active    idle   0/lxd/6  192.168.30.10   5672/tcp                    Unit is ready
+ubuntu/0*                  active    idle   0        192.168.30.4                                ready
+  ntp/1                    active    idle            192.168.30.4    123/udp                     chrony: Ready
+
+Machine  State    DNS            Inst id              Series  AZ       Message
+0        started  192.168.30.4   noden20              bionic  default  Deployed
+0/lxd/0  started  192.168.30.8   juju-856fc2-0-lxd-0  bionic  default  Container started
+0/lxd/1  started  192.168.30.7   juju-856fc2-0-lxd-1  bionic  default  Container started
+0/lxd/2  started  192.168.30.13  juju-856fc2-0-lxd-2  bionic  default  Container started
+0/lxd/3  started  192.168.30.12  juju-856fc2-0-lxd-3  bionic  default  Container started
+0/lxd/4  started  192.168.30.9   juju-856fc2-0-lxd-4  bionic  default  Container started
+0/lxd/5  started  192.168.30.11  juju-856fc2-0-lxd-5  bionic  default  Container started
+0/lxd/6  started  192.168.30.10  juju-856fc2-0-lxd-6  bionic  default  Container started
+1        started  192.168.30.5   noden19              bionic  default  Deployed
+2        started  192.168.30.6   neutron              bionic  default  Deployed
