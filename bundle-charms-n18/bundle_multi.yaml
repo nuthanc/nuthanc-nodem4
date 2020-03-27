@@ -1,8 +1,8 @@
 series: bionic
 variables:
   openstack-origin:             &openstack-origin               distro
-  vhost-gateway:                &vhost-gateway                  "192.168.30.18"
-  control-network:              &control-network                "192.168.30.0/24"
+  vhost-gateway:                &vhost-gateway                  "192.168.40.254"
+  control-network:              &control-network                "192.168.40.0/24"
   #virtioforwarder-coremask:     &virtioforwarder-coremask       "1,2"
   #agilio-registry:              &agilio-registry                "172.26.1.150:6666" 
   #agilio-registry:              &agilio-registry                "netronomesystems"
@@ -25,7 +25,7 @@ variables:
   #image-tag:                    &image-tag                      "1909.4-queens"
   #tmage-tag:                    &image-tag                      "1909.30-queens"
   #image-tag:                    &image-tag                      "1908-0.6-queens"
-  image-tag:                    &image-tag                      "2003.9"
+  image-tag:                    &image-tag                      "2003.31"
   #docker-registry-insecure:     &docker-registry-insecure       false
   docker-registry-insecure:     &docker-registry-insecure       "true"
 machines:
