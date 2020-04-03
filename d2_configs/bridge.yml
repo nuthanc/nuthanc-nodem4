@@ -11,8 +11,10 @@ network:
         addresses: [10.204.217.158, 8.8.8.8]
     enp4s0f0:
       dhcp4: no
+      dhcp6: no
     enp4s0f1:
       dhcp4: no
+      dhcp6: no
   bridges:
     br1:
       interfaces: [enp4s0f1]
