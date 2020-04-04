@@ -10,10 +10,10 @@ variables:
   agilio-password:              &agilio-password                "customer#115"
   agilio-insecure:              &agilio-insecure                false
   agilio-phy:                   &agilio-phy                     "enp4s0np0"
-  docker-registry:              &docker-registry                "10.204.217.152:5000"
+  docker-registry:              &docker-registry                "bng-artifactory.juniper.net/contrail-nightly"
   #docker-user:                  &docker-user                    "JNPR-Customer200"
   #docker-password:              &docker-password                "FSg0vLW^7oM#GZy8Ju*f"
-  image-tag:                    &image-tag                      "1912.32"
+  image-tag:                    &image-tag                      "master.1145"
   docker-registry-insecure:     &docker-registry-insecure       "true"
 machines:
   "1":
@@ -200,7 +200,7 @@ services:
       #docker-password: *docker-password
       image-tag: *image-tag
       docker-registry-insecure: *docker-registry-insecure
-      data-network: "intf"
+      data-network: "enp2s0f3"
       auth-mode: no-auth
     to: [ "1" ]
   contrail-keystone-auth:
