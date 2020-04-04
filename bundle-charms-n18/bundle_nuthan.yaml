@@ -1,9 +1,8 @@
-
 series: bionic
 variables:
   openstack-origin:             &openstack-origin               distro
-  vhost-gateway:                &vhost-gateway                  "192.168.40.18"
-  control-network:              &control-network                "192.168.40.0/24"
+  vhost-gateway:                &vhost-gateway                  "192.168.30.18"
+  control-network:              &control-network                "192.168.30.0/24"
   #virtioforwarder-coremask:     &virtioforwarder-coremask       "1,2"
   #agilio-registry:              &agilio-registry                "172.26.1.150:6666" 
   #agilio-registry:              &agilio-registry                "netronomesystems"
@@ -15,18 +14,18 @@ variables:
   #agilio-phy:                   &agilio-phy                     "nfp_p0"
   #docker-registry:              &docker-registry                "hub.juniper.net/contrail" #"172.26.1.150:6666"
   #docker-registry:              &docker-registry                "172.26.1.150:6666"
-  docker-registry:              &docker-registry                "10.204.217.152:5000"
+  #docker-registry:              &docker-registry                "10.204.217.152:5000"
   #docker-registry:              &docker-registry                "hub.juniper.net/contrail-nightly"
-  #docker-registry:              &docker-registry                "bng-artifactory.juniper.net/contrail-nightly"
-  docker-user:                  &docker-user                    "JNPR-Customer200"
-  docker-password:              &docker-password                "FSg0vLW^7oM#GZy8Ju*f"
-  #docker-user:                  &docker-user                    "JNPR-Customer43"
-  #docker-password:              &docker-password                "uQFJW9Bj2YEtKesGbxM4"
+  docker-registry:              &docker-registry                "bng-artifactory.juniper.net/contrail-nightly"
+  ##docker-user:                  &#docker-user                    "JNPR-Customer200"
+  ##docker-password:              &#docker-password                "FSg0vLW^7oM#GZy8Ju*f"
+  ##docker-user:                  &#docker-user                    "JNPR-Customer43"
+  ##docker-password:              &#docker-password                "uQFJW9Bj2YEtKesGbxM4"
   #image-tag:                    &image-tag                      "1908.47-queens"
   #image-tag:                    &image-tag                      "1909.4-queens"
   #tmage-tag:                    &image-tag                      "1909.30-queens"
   #image-tag:                    &image-tag                      "1908-0.6-queens"
-  image-tag:                    &image-tag                      "1912.32"
+  image-tag:                    &image-tag                      "2003.9"
   #docker-registry-insecure:     &docker-registry-insecure       false
   docker-registry-insecure:     &docker-registry-insecure       "true"
 machines:
@@ -155,8 +154,8 @@ services:
     num_units: 0
     options:
       docker-registry: *docker-registry
-      docker-user: *docker-user
-      docker-password: *docker-password
+      #docker-user: *#docker-user
+      #docker-password: *#docker-password
       image-tag: *image-tag
       docker-registry-insecure: *docker-registry-insecure
   contrail-agent:
@@ -167,12 +166,12 @@ services:
     options:
       log-level: "SYS_DEBUG"
       docker-registry: *docker-registry
-      docker-user: *docker-user
-      docker-password: *docker-password
+      #docker-user: *#docker-user
+      #docker-password: *#docker-password
       image-tag: *image-tag
       docker-registry-insecure: *docker-registry-insecure
       vhost-gateway: *vhost-gateway
-      physical-interface: "enp175s0np0s0"
+      physical-interface: "eno1"
   contrail-agent-dpdk:
     charm: ./contrail-charms/contrail-agent
     num_units: 0
@@ -181,8 +180,8 @@ services:
     options:
       log-level: "SYS_DEBUG"
       docker-registry: *docker-registry
-      docker-user: *docker-user
-      docker-password: *docker-password
+      #docker-user: *#docker-user
+      #docker-password: *#docker-password
       image-tag: *image-tag
       docker-registry-insecure: *docker-registry-insecure
       dpdk: true
@@ -192,7 +191,7 @@ services:
       dpdk-driver: ""
       dpdk-coremask: "1-4"
       vhost-gateway: *vhost-gateway
-      physical-interface: "enp175s0np0s0" 
+      physical-interface: "eno1" 
   contrail-analytics:
     charm: ./contrail-charms/contrail-analytics
     num_units: 1
@@ -201,8 +200,8 @@ services:
     options:
       log-level: "SYS_DEBUG"
       docker-registry: *docker-registry
-      docker-user: *docker-user
-      docker-password: *docker-password
+      #docker-user: *#docker-user
+      #docker-password: *#docker-password
       image-tag: *image-tag
       docker-registry-insecure: *docker-registry-insecure
       #control-network: *control-network
@@ -217,8 +216,8 @@ services:
       cassandra-minimum-diskgb: "4"
       cassandra-jvm-extra-opts: "-Xms8g -Xmx8g"
       docker-registry: *docker-registry
-      docker-user: *docker-user
-      docker-password: *docker-password
+      #docker-user: *#docker-user
+      #docker-password: *#docker-password
       image-tag: *image-tag
       docker-registry-insecure: *docker-registry-insecure
       #control-network: *control-network
@@ -234,8 +233,8 @@ services:
       cassandra-minimum-diskgb: "4"
       cassandra-jvm-extra-opts: "-Xms8g -Xmx8g"
       docker-registry: *docker-registry
-      docker-user: *docker-user
-      docker-password: *docker-password
+      #docker-user: *#docker-user
+      #docker-password: *#docker-password
       image-tag: *image-tag
       docker-registry-insecure: *docker-registry-insecure
       #control-network: *control-network
@@ -333,7 +332,3 @@ relations:
   #- [ "nova-compute-accel", "ntp" ]
   #- [ "contrail-openstack", "nova-compute-accel" ]
     # - [ "agilio-vrouter5:juju-info", "nova-compute-accel:juju-info"  ]
-
-
-
-
