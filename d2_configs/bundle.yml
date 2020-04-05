@@ -157,7 +157,7 @@ services:
       dpdk-driver: ""
       dpdk-coremask: "1-4"
       vhost-gateway: *vhost-gateway
-      physical-interface: "enp4s0f0"
+      physical-interface: "enp4s0np0"
   contrail-analytics:
     charm: ./contrail-charms/contrail-analytics
     num_units: 1
