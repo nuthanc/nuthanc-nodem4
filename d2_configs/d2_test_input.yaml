@@ -1,0 +1,121 @@
+deployment:
+    orchestrator: openstack
+
+provider_config:
+  bms:
+      domainsuffix: englab.juniper.net
+      ntpserver: 10.204.217.158
+      ssh_pwd: c0ntrail123
+      ssh_user: root
+
+instances:
+  nodea29:
+      ip: 192.168.11.14
+      provider: bms
+      roles:
+          analytics: null
+          analytics_database: null
+          config: null
+          config_database: null
+          control: null
+          openstack: null
+          webui: null
+  nodei8:
+      ip: 192.168.11.15
+      provider: bms
+      roles:
+          openstack_compute: null
+          vrouter:
+              PHYSICAL_INTERFACE: enp4s0np0
+  nodem35:
+      ip: 192.168.11.17
+      provider: bms
+      roles:
+          openstack_compute: null
+          vrouter:
+              PHYSICAL_INTERFACE: enp4s0np0
+
+
+contrail_configuration:
+  AAA_MODE: rbac
+  CLOUD_ORCHESTRATOR: openstack
+  CONFIG_API_VIP: 192.168.11.14
+  CONTAINER_REGISTRY: bng-artifactory.juniper.net/contrail-nightly
+  CONTRAIL_VERSION: master.1145
+  CONTROLLER_NODES: 192.168.11.14
+  CONTROL_NODES: 192.168.21.5
+  ENCAP_PRIORITY: VXLAN,MPLSoUDP,MPLSoGRE
+  IPFABRIC_SERVICE_HOST: 192.168.11.24
+  KEYSTONE_AUTH_ADMIN_PASSWORD: c0ntrail123
+  KEYSTONE_AUTH_HOST: 192.168.11.24
+  KEYSTONE_AUTH_URL_VERSION: /v3
+  OPENSTACK_NODES: 192.168.11.14
+  RABBITMQ_NODE_PORT: 5673
+  REGISTRY_PRIVATE_INSECURE: true
+  VROUTER_GATEWAY: 192.168.21.254
+  XMPP_SSL_ENABLE: true
+
+  RABBITMQ_NODE_PORT: "5673"
+
+orchestrator_configuration:
+  contrail_api_interface_address: 192.168.11.14
+  enable_haproxy: 'yes'
+  enable_ironic: 'no'
+  enable_swift: 'no'
+  external_vip: 192.168.11.24
+  internal_vip: 192.168.11.24
+  keystone:
+      password: c0ntrail123
+      version: v3
+  vrrp_id: 213
+
+
+test_configuration:
+  cfgm0_host_pwd: c0ntrail123
+  cfgm0_host_string: root@192.168.11.14
+  cluster_id: new_regr_cluster
+  device_manager:
+      umesh:
+          asn: 64512
+          control_ip: 10.10.10.100
+          mgmt_ip: 10.204.217.191
+          model: mx
+          name: umesh
+          ssh_password: c0ntrail123
+          ssh_username: root
+          vendor: juniper
+  ext_routers:
+      blr-mx1: 10.10.10.101
+  fabric_gw:
+      sw166: 10.204.217.254
+  image_web_server: 10.204.217.158
+  mail_server:
+      port: 25
+      sender: contrailbuild@juniper.net
+      server: 10.204.216.49
+      to: dl-contrail-sw@juniper.net
+  physical_routers:
+      blr-mx1:
+          asn: 64512
+          control_ip: 10.10.10.101
+          mgmt_ip: 10.204.216.253
+          model: mx
+          name: blr-mx1
+          ports: null
+          ssh_password: c0ntrail123
+          ssh_username: root
+          tunnel_ip: 10.10.10.101
+          type: router
+          vendor: juniper
+  public_host: 10.84.5.120
+  public_rt: 19005
+  public_subnet: 10.204.219.120/29
+  public_virtual_network: 10.204.219.120/29
+  use_project_scoped_token: true
+  web_server:
+      log_path: /home/bhushana/Documents/technical/logs
+      password: c0ntrail!23
+      report_path: /home/bhushana/Documents/technical/sanity/fb-sanity/FB-R5.0-ocata-centos7-ha-ansible-sanity
+      server: 10.204.216.50
+      username: bhushana
+      web_root: Docs/logs
