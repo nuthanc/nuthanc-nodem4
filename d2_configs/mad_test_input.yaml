@@ -1,0 +1,85 @@
+deployment:
+    orchestrator: openstack
+    deployer: juju
+
+provider_config:
+  bms:
+      domainsuffix: local
+      ntpserver: 10.84.5.101
+      ssh_pwd: ubuntu
+      ssh_user: ubuntu
+
+instances:
+  bms2.maas:
+      ip: 10.87.79.25
+      provider: bms
+      roles:
+          #openstack: null
+          analytics: null
+          analytics_database: null
+          config: null
+          config_database: null
+          control: null
+          webui: null
+  bms3.maas:
+      ip: 10.87.79.23
+      provider: bms
+      roles:
+          analytics: null
+          analytics_database: null
+          config: null
+          config_database: null
+          control: null
+          webui: null
+  bms4.maas:
+      ip: 10.87.79.59
+      provider: bms
+      roles:
+          analytics: null
+          analytics_database: null
+          config: null
+          config_database: null
+          control: null
+          webui: null
+          # bms5.maas:
+          #   ip: 10.87.79.61
+          #provider: bms
+          # roles:
+          #openstack_compute: null
+          #vrouter: null
+  bms6.maas:
+      ip: 10.87.79.12
+      provider: bms
+      roles:
+          openstack_compute: null
+          vrouter: null
+  bms7.maas:
+      ip: 10.87.79.27
+      provider: bms
+      roles:
+          openstack: null
+
+contrail_configuration:
+  #AAA_MODE: rbac
+  CONTROLLER_NODES: 10.87.79.25,10.87.79.23,10.87.79.59
+
+orchestrator_configuration:
+  keystone:
+      password: password
+      version: /v3
+
+test_configuration:
+  image_web_server: 10.84.5.120
+  use_project_scoped_token: true
+  mail_server:
+      port: 4000
+      sender: contrail-build@juniper.net
+      server: 10.84.24.64
+      tp: dl-contrail-sw@juniper.net
+  web_server:
+      log_path: /var/www/html/Docs/logs
+      password: stack@123
+      report_path: /var/www/html/sanity/fb-sanity/SVL-R190x-queens-ubuntu18-ha-juju-sanity
+      server: zephyrine.englab.juniper.net
+      username: stack
+      web_root: /Docs/logs

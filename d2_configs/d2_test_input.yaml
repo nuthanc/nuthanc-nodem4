@@ -5,8 +5,8 @@ provider_config:
   bms:
       domainsuffix: englab.juniper.net
       ntpserver: 10.204.217.158
-      ssh_pwd: c0ntrail123
-      ssh_user: root
+      #ssh_pwd: c0ntrail123
+      ssh_user: ubuntu
 
 instances:
   nodea29:
