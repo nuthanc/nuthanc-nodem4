@@ -1,0 +1,78 @@
+1  cd contrail-test/
+    2  vi contrail_test_input.yaml
+    3  vi fixtures/vnc_api_test.py
+    4  export PYTHONPATH=./scripts:./fixtures:./serial_scripts
+    5  export TEST_CONFIG_FILE=contrail_test_input.yaml
+    6  export EXTRA_RUN_TEST_ARGS='-c 8'
+    7  export EMAIL_SUBJECT=openstack sanity
+    8  export PARALLEL_RUN=1
+    9  export OS_IDENTITY_API_VERSION=3
+   10  export OS_AUTH_URL=http://192.168.11.15:5000/v3
+   11  export OS_USER_DOMAIN_NAME=admin_domain
+   12  export OS_USERNAME=admin
+   13  export OS_PASSWORD=c0ntrail123
+   14  export OS_PROJECT_DOMAIN_NAME=admin_domain
+   15  export OS_PROJECT_NAME=admin
+   16  export OS_DOMAIN_NAME=admin_domain
+   17  python -m testtools.run scripts.neutron.test_routers_basic.TestRoutersBasic.test_basic_snat_behavior_without_external_connectivity
+   18  python -m testtools.run scripts.vm_regression.test_vm_basic.TestBasicVMVN.test_vm_add_delete
+   19  python -m testtools.run scripts.vm_regression.test_vm_basic.TestBasicVMVN.test_ping_within_vn_two_vms_two_different_subnets
+   20  yum install -y screen
+   21  screen -S sanity
+   22  export PYTHONPATH=./scripts:./fixtures:./serial_scripts
+   23  export TEST_CONFIG_FILE=contrail_test_input.yaml
+   24  export EXTRA_RUN_TEST_ARGS='-c 8'
+   25  export EMAIL_SUBJECT=openstack sanity
+   26  export PARALLEL_RUN=1
+   27  export OS_IDENTITY_API_VERSION=3
+   28  export OS_AUTH_URL=http://192.168.11.15:5000/v3
+   29  export OS_USER_DOMAIN_NAME=admin_domain
+   30  export OS_USERNAME=admin
+   31  export OS_PASSWORD=c0ntrail123
+   32  export OS_PROJECT_DOMAIN_NAME=admin_domain
+   33  export OS_PROJECT_NAME=admin
+   34  export OS_DOMAIN_NAME=admin_domain
+   35  bash -x run_tests.sh -m -U -s -T sanity -t $EXTRA_RUN_TEST_ARGS
+   36  bash -x run_tests.sh -m -U -s -T sanity -t $EXTRA_RUN_TEST_ARGS
+   37  grep test_bgpaas_basic -rn
+   38  exit
+   39  cd contrail-test/
+   40  grep test_bgpaas_basic -rn
+   41  python -m testtools.run scripts.bgpaas.test_bgpaas.TestBGPaaS.test_bgpaas_basic
+   42  python -m testtools.run scripts.bgpaas.test_bgpaas.TestBGPaaS.test_bgpaas_basic
+   43  python -m testtools.run scripts.vm_regression.test_vm_basic.TestBasicVMVN.test_ping_within_vn_two_vms_two_different_subnets
+   44  python -m testtools.run scripts.bgpaas.test_bgpaas.TestBGPaaS.test_bgpaas_basic
+   45  python -m testtools.run scripts.neutron.test_routers_basic.TestRoutersBasic.test_basic_snat_behavior_without_external_connectivity
+   46  export PYTHONPATH=./scripts:./fixtures:./serial_scripts
+   47  export TEST_CONFIG_FILE=contrail_test_input.yaml
+   48  export EXTRA_RUN_TEST_ARGS='-c 8'
+   49  export EMAIL_SUBJECT=openstack sanity
+   50  export PARALLEL_RUN=1
+   51  export OS_IDENTITY_API_VERSION=3
+   52  export OS_AUTH_URL=http://192.168.11.15:5000/v3
+   53  export OS_USER_DOMAIN_NAME=admin_domain
+   54  export OS_USERNAME=admin
+   55  export OS_PASSWORD=c0ntrail123
+   56  export OS_PROJECT_DOMAIN_NAME=admin_domain
+   57  export OS_PROJECT_NAME=admin
+   58  export OS_DOMAIN_NAME=admin_domain
+   59  python -m testtools.run scripts.neutron.test_routers_basic.TestRoutersBasic.test_basic_snat_behavior_without_external_connectivity
+   60  python -m testtools.run scripts.bgpaas.test_bgpaas.TestBGPaaS.test_bgpaas_basic
+   61  bash -x run_tests.sh -m -U -s -T sanity -t $EXTRA_RUN_TEST_ARGS
+   62  screen -ls
+   63  screen -Sx sanity
+   64  screen -S sanity
+   65  python -m testtools.run scripts.bgpaas.test_bgpaas.TestBGPaaS.test_bgpaas_basic
+   66  history | grep vi
+   67  vi common/contrail_test_init.py
+   68  python -m testtools.run scripts.bgpaas.test_bgpaas.TestBGPaaS.test_bgpaas_basic
+   69  vi common/contrail_test_init.py
+   70  grep "VM is not in ACTIVE state" -rn
+   71  vi common/contrail_test_init.py
+   72  python -m testtools.run scripts.bgpaas.test_bgpaas.TestBGPaaS.test_bgpaas_basic
+   73  ls
+   74  clear
+   75  cat contrail_test_input.yaml
+   76  lsl
+   77  clear
+   78  history
